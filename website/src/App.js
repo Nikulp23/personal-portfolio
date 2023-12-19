@@ -2,7 +2,7 @@ import React from 'react';
 import { MantineProvider } from '@mantine/core';
 import { Home } from './Home';
 import '@mantine/core/styles.css';
-import { HeaderMegaMenu } from './HeaderMegaMenu';
+import { Navbar } from './Navbar';
 import { FooterCentered } from './Footer';
 import { UserCardImage } from './UserCard';
 import "./App.css"
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <MantineProvider theme={{ colorScheme: 'dark' }}>
-      <HeaderMegaMenu />
+      <Navbar />
       <Home />
       <UserCardImage />
       <FooterCentered />
