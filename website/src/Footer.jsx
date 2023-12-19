@@ -1,6 +1,6 @@
 import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
-import { MantineLogo } from '@mantinex/mantine-logo';
+// import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterCentered.module.css';
 
 const links = [
@@ -28,7 +28,8 @@ export function FooterCentered() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <MantineLogo size={28} />
+        {/* <MantineLogo size={28} /> */}
+        Nikul's Logo
 
         <Group className={classes.links}>{items}</Group>
 
