@@ -15,7 +15,7 @@ import { FeaturesCards } from './Cards';
 function App() {
 
   return (
-    <MantineProvider theme={{ colorScheme: 'dark' }}>
+    <MantineProvider defaultColorScheme="auto">
       <Navbar />
       <Home />
       <UserCardImage />
