@@ -1,10 +1,12 @@
 .card {
-    background-color: var(--mantine-color-body);
-    width: 300px;
-    margin: 20px;
-    height: fit-content;
+  background-color: var(--mantine-color-body);
+  width: 350px; /* Increased width */
+  margin: 20px auto; /* Adjusted margin for auto horizontal centering */
+  height: fit-content; /* Keeps height flexible to content */
 }
-  
-  .avatar {
-    border: rem(2px) solid var(--mantine-color-body);
-  }
+
+.avatar {
+  border: 2px solid var(--mantine-color-body); /* Adjusted border size */
+  width: 100px; /* Larger avatar */
+  height: 100px; /* Make sure to keep it a square */
+}

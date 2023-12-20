@@ -1,10 +1,10 @@
 import { Card, Avatar, Text, Group, Button } from '@mantine/core';
 import classes from './UserCardImage.module.css';
+import pic from './profile.png';
 
 const stats = [
-  { value: '34K', label: 'Followers' },
-  { value: '187', label: 'Follows' },
-  { value: '1.6K', label: 'Posts' },
+  { value: '3.65', label: 'GPA' },
+  { value: 'May 2026', label: 'Graduation' },
 ];
 
 export function UserCardImage() {
@@ -29,7 +29,7 @@ export function UserCardImage() {
         }}
       />
       <Avatar
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-9.png"
+        src={pic}
         size={80}
         radius={80}
         mx="auto"
@@ -37,16 +37,16 @@ export function UserCardImage() {
         className={classes.avatar}
       />
       <Text ta="center" fz="lg" fw={500} mt="sm">
-        Bill Headbanger
+        Nikul Patel
       </Text>
       <Text ta="center" fz="sm" c="dimmed">
-        Fullstack engineer
+        Web Developer
       </Text>
       <Group mt="md" justify="center" gap={30}>
         {items}
       </Group>
       <Button fullWidth radius="md" mt="xl" size="md" variant="default">
-        Follow
+        View Resume
       </Button>
     </Card>
   );

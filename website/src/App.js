@@ -15,15 +15,25 @@ import { FeaturesCards } from './Cards';
 function App() {
 
   return (
-    <MantineProvider defaultColorScheme="auto">
+    <MantineProvider defaultColorScheme="light">
+
+      <div className="Home">
+        <div className='left'><UserCardImage /></div>
+        <div className='right'><Home /></div>
+      </div>
+
+
       <Navbar />
-      <Home />
-      <UserCardImage />
-      <FooterCentered />
-      <StatsGroup />
-      <FeaturesCards />
+     
+      
+
+
+
+      {/* <StatsGroup /> */}
+      {/* <FeaturesCards /> */}
       {/* <FeaturesImages /> */}
-      <GradientSegmentedControl />
+      {/* <GradientSegmentedControl /> */}
+      <FooterCentered />
     </MantineProvider>
   );
 }

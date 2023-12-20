@@ -1,0 +1,32 @@
+/* Style for the overall Home container */
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the left and right sections */
+  .left, .right {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .Home {
+      flex-direction: row;
+    }
+  
+    .left {
+      width: 30%;
+    }
+  
+    .right {
+      width: 70%;
+    }
+  }  

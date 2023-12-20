@@ -2,8 +2,19 @@ import {Group, Button, Box, Burger, Drawer, Divider, ScrollArea, rem} from '@man
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Navbar.module.css';
 import { GithubIcon } from '@mantinex/dev-icons';
+import { SocialIcon } from 'react-social-icons'
+const Component = <SocialIcon url="https://linkedin.com" />
 
 export function Navbar() {
+
+  const linkedInIcon = (
+    <SocialIcon 
+      url="https://linkedin.com/in/yourusername" 
+      style={{ height: 20, width: 20 }} 
+      bgColor="black"
+    />
+  );
+
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
   return (
@@ -11,7 +22,7 @@ export function Navbar() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           {/* <MantineLogo size={30} /> */}
-          Nikul's Logo
+          Nikul's logo
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
@@ -30,7 +41,17 @@ export function Navbar() {
 
           <Group visibleFrom="sm">
 
-            <Button>Linkedin</Button>
+          <Button
+            component="a"
+            href="https://linkedin.com/in/yourusername"
+            size="l"
+            variant="default"
+            className={classes.control}
+            leftSection={linkedInIcon}
+          >
+            LinkedIn
+          </Button>
+
 
             <Button
             component="a"
@@ -78,7 +99,15 @@ export function Navbar() {
 
           <Group justify="center" grow pb="xl" px="md">
 
-          <Button>Linkedin</Button>
+          <Button
+            component="a"
+            href="https://github.com/Nikulp23"
+            size="l"
+            className={classes.control}
+            leftSection={<logo size={20} />}
+          >
+            Linkedin
+          </Button>
 
           <Button
             component="a"
