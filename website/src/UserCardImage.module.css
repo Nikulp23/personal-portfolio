@@ -1,7 +1,7 @@
 .card {
   background-color: var(--mantine-color-body);
-  width: 350px; /* Increased width */
-  margin: 20px auto; /* Adjusted margin for auto horizontal centering */
+  width: 325px; /* Increased width */
+  margin: 0px auto; 
   height: fit-content; /* Keeps height flexible to content */
 }
 

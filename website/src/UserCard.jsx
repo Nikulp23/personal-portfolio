@@ -40,7 +40,7 @@ export function UserCardImage() {
         Nikul Patel
       </Text>
       <Text ta="center" fz="sm" c="dimmed">
-        Web Developer
+        Full stack Developer
       </Text>
       <Group mt="md" justify="center" gap={30}>
         {items}
