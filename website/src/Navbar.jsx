@@ -37,9 +37,6 @@ export function Navbar() {
             <a href="#" className={classes.link}>
               Projects
             </a>
-            <a href="#" className={classes.link}>
-              Resume
-            </a>
           </Group>
 
           <Group visibleFrom="sm">
@@ -74,6 +71,8 @@ export function Navbar() {
         </Group>
       </header>
 
+
+      {/* Closed Navbar */}
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
@@ -97,9 +96,6 @@ export function Navbar() {
           </a>
           <a href="#" className={classes.link}>
             Projects
-          </a>
-          <a href="#" className={classes.link}>
-            Resume
           </a>
 
           <Divider my="sm" />
@@ -127,7 +123,6 @@ export function Navbar() {
             GitHub
           </Button>
 
-            
           </Group>
         </ScrollArea>
       </Drawer>

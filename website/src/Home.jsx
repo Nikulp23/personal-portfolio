@@ -17,7 +17,6 @@ export function Home() {
           </Text>{' '}
 
           <br></br>
-
         </h1>
 
 
@@ -25,32 +24,36 @@ export function Home() {
           <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
             A Full Stack Developer
           </Text>{' '}
+
+          <br></br>
+          
         </h1>
 
-        <Group className={classes.controls}>
-          <Button
-            component="a"
-            href="https://github.com/mantinedev/mantine"
-            size="l"
-            variant="default"
-            leftSection={<GithubIcon size={20} />}
-          >
-            GitHub
-          </Button>
-        </Group>
+        {/* Buttons on the home page */}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '25px' }}>
+            <Button
+                component="a"
+                href="https://github.com/mantinedev/mantine"
+                size="l"
+                variant="gradient"
+                gradient={{ from: 'blue', to: 'cyan' }}
+                rightSection=''
+                style={{ marginRight: '10px' }}  // Adding margin to the right of the first button
+            >
+                Show Resume
+            </Button>
 
-        <Group className={classes.controls}>
-          <Button
-            component="a"
-            href="https://github.com/mantinedev/mantine"
-            size="l"
-            variant="default"
-            leftSection={<GithubIcon size={20} />}
-          >
-            GitHub
-          </Button>
-        </Group>
-        
+            <Button
+                component="a"
+                href="https://github.com/mantinedev/mantine"
+                size="l"
+                variant="default"
+                leftSection=''
+            >
+                Contact Me
+            </Button>
+        </div>     
+
       </Container>
     </div>
   );

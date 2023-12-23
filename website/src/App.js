@@ -6,8 +6,6 @@ import '@mantine/core/styles.css';
 import { Navbar } from './Navbar';
 import { FooterCentered } from './Footer';
 import { UserCardImage } from './UserCard';
-import { GradientSegmentedControl } from './GradientSelect';
-import { StatsGroup } from './StatsGroup';
 import { FeaturesCards } from './Cards';
 import classes from './Home.module.css';
 import { Text } from '@mantine/core';
@@ -53,7 +51,7 @@ function App() {
         <HACKRPICard />
       </div>
 
-      <StatsGroup />
+      {/* <StatsGroup /> */}
       {/* <GradientSegmentedControl /> */}
       <FooterCentered />
     </MantineProvider>
