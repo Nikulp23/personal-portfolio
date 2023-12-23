@@ -17,10 +17,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     box-sizing: border-box;
 }
-  
+
   /* Style for the left and right sections */
 .left, .right {
     width: 100%;
@@ -42,8 +42,80 @@
       width: 45%;
     }
 }
+
+h1 {
+  font-size: 45px;
+}
+
+
 /* ------------------------------------------------------------- */
 
 /* -------------------------- ABOUT ME ----------------------------- */
-.AboutMe {
+.About {
+  display: flex;
+  background-image: url('./plane_wallpaper.png'); /* Update with the correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.About .left {
+  width: 40%;
+  /* Optional: Add other styling like padding, background, etc. */
+}
+
+.About .right {
+  width: 60%;
+  /* Optional: Add other styling like padding, background, etc. */
+}
+
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .About {
+      flex-direction: row;
+    }
+  
+    .About .left {
+      width: 40%;
+    }
+  
+    .About .right {
+      width: 60%;
+      margin: 50px;
+    }
+}
+
+/* -------------------------- ABOUT ME ----------------------------- */
+.Experience {
+  display: flex;
+  background-image: url('./plane_wallpaper.png'); /* Update with the correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.Projects {
+  display: flex;
+  background-image: url('./plane_wallpaper.png'); /* Update with the correct path to the image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
 }

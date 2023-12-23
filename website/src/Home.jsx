@@ -6,40 +6,45 @@ export function Home() {
   return (
     <div className={classes.wrapper}>
       <Container size={700} className={classes.inner}>
+
         <h1 className={classes.title}>
-          Hello! I'm{' '}
+          <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
+            Hello! I'm
+          </Text>{' '}
+
           <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
             Nikul Patel
           </Text>{' '}
+
+          <br></br>
+
         </h1>
 
-        <h3 className={classes.title}>
-        Computer Science and Information Technology Student{' '} <br/>
-          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-            Rensselaer Polytechnic Institute
-          </Text>{' '}
-        </h3>
 
-        <Text className={classes.description} color="dimmed">
-            Dedicated Computer Science student with a passion for technology, seeking a challenging internship to apply and enhance my skills in software development
-        </Text>
+        <h1 className={classes.title}>
+          <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
+            A Full Stack Developer
+          </Text>{' '}
+        </h1>
 
         <Group className={classes.controls}>
-          <Button
-            size="l"
-            className={classes.control}
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan' }}
-          >
-            Get started
-          </Button>
-
           <Button
             component="a"
             href="https://github.com/mantinedev/mantine"
             size="l"
             variant="default"
-            className={classes.control}
+            leftSection={<GithubIcon size={20} />}
+          >
+            GitHub
+          </Button>
+        </Group>
+
+        <Group className={classes.controls}>
+          <Button
+            component="a"
+            href="https://github.com/mantinedev/mantine"
+            size="l"
+            variant="default"
             leftSection={<GithubIcon size={20} />}
           >
             GitHub

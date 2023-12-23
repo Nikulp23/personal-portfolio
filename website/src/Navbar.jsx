@@ -48,7 +48,8 @@ export function Navbar() {
             component="a"
             href="https://linkedin.com/in/yourusername"
             size="l"
-            variant="default"
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan' }}
             className={classes.control}
             leftSection={linkedInIcon}
           >
