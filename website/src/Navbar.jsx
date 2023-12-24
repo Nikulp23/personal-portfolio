@@ -6,14 +6,6 @@ import { SocialIcon } from 'react-social-icons'
 
 export function Navbar() {
 
-  const linkedInIcon = (
-    <SocialIcon 
-      url="https://linkedin.com/in/yourusername" 
-      style={{ height: 20, width: 20 }} 
-      bgColor="black"
-    />
-  );
-
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
   return (
@@ -24,18 +16,10 @@ export function Navbar() {
           Nikul's logo
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link}>
-              Home
-            </a>
-            <a href="#" className={classes.link}>
-              About Me
-            </a>
-            <a href="#" className={classes.link}>
-              Work Experience
-            </a>
-            <a href="#" className={classes.link}>
-              Projects
-            </a>
+            <a href="#home" className={classes.link}>Home</a>
+            <a href="#about" className={classes.link}>About Me</a>
+            <a href="#experience" className={classes.link}>Work Experience</a>
+            <a href="#projects" className={classes.link}>Projects</a>
           </Group>
 
           <Group visibleFrom="sm">
@@ -47,7 +31,7 @@ export function Navbar() {
             variant="gradient"
             gradient={{ from: 'blue', to: 'cyan' }}
             className={classes.control}
-            leftSection={linkedInIcon}
+            // leftSection={linkedInIcon}
           >
             LinkedIn
           </Button>
@@ -82,16 +66,16 @@ export function Navbar() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 
-          <a href="#" className={classes.link}>
+          <a href="#home" className={classes.link}>
             Home
           </a>
-          <a href="#" className={classes.link}>
+          <a href="#about" className={classes.link}>
               About Me
           </a>
-          <a href="#" className={classes.link}>
+          <a href="experience" className={classes.link}>
             Work Experience
           </a>
-          <a href="#" className={classes.link}>
+          <a href="projects" className={classes.link}>
             Projects
           </a>
 

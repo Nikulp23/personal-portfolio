@@ -1,7 +1,6 @@
 import { Container, Text, Button, Group } from '@mantine/core';
 import { GithubIcon } from '@mantinex/dev-icons';
 import classes from './Home.module.css';
-
 import { motion } from 'framer-motion';
 
 // Define animation variants
@@ -34,7 +33,7 @@ export function Home() {
         </h1>
 
 
-        <h1 className={classes.title}>
+        <h1 className={classes.title} typewriter>
           <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
             A Full Stack Developer
           </Text>{' '}
