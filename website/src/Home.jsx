@@ -2,9 +2,23 @@ import { Container, Text, Button, Group } from '@mantine/core';
 import { GithubIcon } from '@mantinex/dev-icons';
 import classes from './Home.module.css';
 
+import { motion } from 'framer-motion';
+
+// Define animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { delay: 0.5, duration: 1.5 } }
+};
+
 export function Home() {
   return (
-    <div className={classes.wrapper}>
+    <motion.div
+      className={classes.wrapper}
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+
       <Container size={700} className={classes.inner}>
 
         <h1 className={classes.title}>
@@ -55,6 +69,7 @@ export function Home() {
         </div>     
 
       </Container>
-    </div>
+
+    </motion.div>
   );
 }

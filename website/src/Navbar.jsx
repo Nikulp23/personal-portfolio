@@ -3,7 +3,6 @@ import { useDisclosure } from '@mantine/hooks';
 import classes from './Navbar.module.css';
 import { GithubIcon } from '@mantinex/dev-icons';
 import { SocialIcon } from 'react-social-icons'
-const Component = <SocialIcon url="https://linkedin.com" />
 
 export function Navbar() {
 
@@ -53,8 +52,7 @@ export function Navbar() {
             LinkedIn
           </Button>
 
-
-            <Button
+          <Button
             component="a"
             href="https://github.com/Nikulp23"
             size="l"
@@ -70,7 +68,6 @@ export function Navbar() {
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
-
 
       {/* Closed Navbar */}
       <Drawer

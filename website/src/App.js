@@ -10,6 +10,7 @@ import { FeaturesCards } from './Cards';
 import classes from './Home.module.css';
 import { Text } from '@mantine/core';
 import { CARTXCard, HACKRPICard } from './BadgeCard'; // Assuming ProjectCard is the component you defined earlier
+import { motion } from 'framer-motion';
 
 function App() {
 
