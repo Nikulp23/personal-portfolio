@@ -1,16 +1,15 @@
 import React from 'react';
-import "./App.css"
 import { MantineProvider } from '@mantine/core';
 import { Home } from './Home';
-import '@mantine/core/styles.css';
 import { Navbar } from './Navbar';
 import { FooterCentered } from './Footer';
 import { UserCardImage } from './UserCard';
 import { FeaturesCards } from './Cards';
 import classes from './Home.module.css';
 import { Text } from '@mantine/core';
-import { CARTXCard, HACKRPICard } from './BadgeCard';
 import { motion } from 'framer-motion';
+import '@mantine/core/styles.css';
+import "./App.css"
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -47,13 +46,9 @@ function App() {
             </Text>{' '}
             </motion.div>
           </p>
+
         </div>
       </div>
-
-
-
-
-      
 
       <div className='Experience' id='experience'>
         <FeaturesCards />
@@ -66,6 +61,7 @@ function App() {
 
       {/* <StatsGroup /> */}
       {/* <GradientSegmentedControl /> */}
+
       <FooterCentered />
     </MantineProvider>
   );

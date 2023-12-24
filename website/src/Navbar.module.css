@@ -7,7 +7,14 @@
   top: 0; /* Align to the top edge */
   left: 0; /* Align to the left edge */
   right: 0; /* Stretch across the full width of the viewport */
+  /* background-image: url("./wallpaper.png");   */
+  background-color: #e2f4fe;
   z-index: 1000;
+  padding: 5px;
+}
+
+body {
+  padding-top: 30px; /* Adjust this value to match the height of your navbar */
 }
   
 .link {

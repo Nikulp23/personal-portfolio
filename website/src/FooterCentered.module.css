@@ -1,10 +1,11 @@
 .footer {
     margin-top: rem(120px);
     border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #e2f4fe;
   }
   
   .inner {

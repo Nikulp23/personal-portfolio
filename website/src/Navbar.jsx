@@ -2,7 +2,6 @@ import {Group, Button, Box, Burger, Drawer, Divider, ScrollArea, rem} from '@man
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Navbar.module.css';
 import { GithubIcon } from '@mantinex/dev-icons';
-import { SocialIcon } from 'react-social-icons'
 
 export function Navbar() {
 

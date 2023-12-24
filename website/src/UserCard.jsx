@@ -1,6 +1,7 @@
 import { Card, Avatar, Text, Group, Button } from '@mantine/core';
 import classes from './UserCardImage.module.css';
 import pic from './profile.png';
+import { motion } from 'framer-motion';
 
 const stats = [
   { value: '3.65', label: 'GPA' },
@@ -20,6 +21,7 @@ export function UserCardImage() {
   ));
 
   return (
+
     <Card withBorder padding="xl" radius="md" className={classes.card}>
       <Card.Section
         h={140}
