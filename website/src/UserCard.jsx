@@ -1,10 +1,10 @@
 import { Card, Avatar, Text, Group, Button } from '@mantine/core';
 import classes from './UserCardImage.module.css';
 import pic from './profile.png';
-import { motion } from 'framer-motion';
 
 const stats = [
   { value: '3.65', label: 'GPA' },
+  { value: 'Sophomore', label: 'Current'},
   { value: 'May 2026', label: 'Graduation' },
 ];
 
