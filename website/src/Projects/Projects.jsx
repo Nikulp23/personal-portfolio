@@ -68,13 +68,13 @@ const Projects = () => {
 
         <Container size="lg" py="xl">
             <Group justify="center">
+                
             <Badge variant="filled" size="xl">
                 MY PROJECTS
             </Badge>
             </Group>
 
-    
-            <Title order={2} className={classes.title} ta="center" mt="sm">
+            <Title order={1} className={classes.title} ta="center" mt="sm">
                 Lets take a look at my projects
             </Title>
     
@@ -87,7 +87,6 @@ const Projects = () => {
                     {cardData.map((card) => (
                         <div key={card.id}>
                             <article className="card">
-                                {/* Card content using card data */}
                                 <div className='background'>
                                     <img src={card.img} alt="Blog Preview Image" />
                                 </div>
