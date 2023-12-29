@@ -1,10 +1,10 @@
-import React from 'react';
-import { SimpleGrid } from '@mantine/core';
-import "./FeaturesCards.module.css";
-import { Text } from '@mantine/core';
-import classes from './Home.module.css';
+import {React, useRef} from 'react';
+import "../Experience/FeaturesCards.module.css";
 import '@mantine/core/styles.css';
-import "./App.css";
+import "../App.css";
+
+import { Canvas, useFrame } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 
 import cplusIcon from './logos/cplusplus-plain.svg';
 import azure from './logos/azure.svg';
@@ -27,12 +27,7 @@ import firebase from './logos/firebase.svg';
 import express from './logos/express.svg';
 import docker from './logos/docker.svg';
 
-import { motion } from 'framer-motion';
-
-const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-};
+import "./Skills.css"
 
 const skills = [
     { name: 'React.js', icon: react },
@@ -57,47 +52,33 @@ const skills = [
     { name: 'Ubuntu', icon: ubuntu },
 ];
 
-const cardVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 2.0 } }
-};
+function SkillSphere({ position, logo }) {
+  const sphereRef = useRef();
+  const texture = new TextureLoader().load(logo);
 
-const SkillCard = ({ name, icon }) => {
-    return (
-        <motion.div
-        className="skill-card"
-        initial="hidden"
-        animate="visible"
-        variants={cardVariants}
-      >
-      
-        <div className="skill-card">
-            <img src={icon} alt={name} className="skill-icon" />
-            <p className="skill-name">{name}</p>
-        </div>
+  useFrame(() => {
+      sphereRef.current.rotation.x += 0.00;
+      sphereRef.current.rotation.y += 0.00;
+  });
 
-      </motion.div>
-    );
-  };
-
-const SkillsSection = () => {
   return (
-    <div className="skills-section">
-      <h1 className={classes.title}>
-      {/* <motion.div initial="hidden" whileInView="visible" variants={textVariants}>
-        <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-            My Skills
-        </Text>{' '}
-        </motion.div> */}
-        
-    </h1>
-      <SimpleGrid cols={5} spacing="lg">
-        {skills.map(skill => (
-          <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
-        ))}
-      </SimpleGrid>
-    </div>
+      <mesh position={position} ref={sphereRef}>
+          <sphereGeometry args={[1, 32, 32]} />
+          <meshStandardMaterial map={texture} />
+      </mesh>
   );
-};
+}
 
-export default SkillsSection;
+function SkillsShowcase() {
+  return (
+      <Canvas>
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 10, 10]} />
+          {skills.map((skill, index) => (
+              <SkillSphere key={index} logo={skill.logo} position={skill.position} />
+          ))}
+      </Canvas>
+  );
+}
+
+export default SkillsShowcase;

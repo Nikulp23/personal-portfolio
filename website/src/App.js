@@ -5,10 +5,9 @@ import { Navbar } from './Navbar/Navbar';
 import { FooterCentered } from './Footer/Footer';
 import { FeaturesCards } from './Experience/Cards';
 import "./App.css";
-// import { AboutSkillsToggle } from './AboutMeToggle';
+import { AboutSkillsToggle } from './AboutMe/AboutMeToggle';
 import '@mantine/core/styles.css';
-import Projects from './Projects/Projects';
-
+import Projects from './Projects/Projects'; 
 
 function App() {
 
@@ -21,7 +20,7 @@ function App() {
         <div className='right'></div>
       </div>
 
-      {/* <AboutSkillsToggle /> */}
+      <AboutSkillsToggle />
 
       <div className='Experience' id='experience'>
         <FeaturesCards />
