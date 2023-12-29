@@ -1,13 +1,14 @@
 import React from 'react';
 import { MantineProvider } from '@mantine/core';
-import { Home } from './Home';
-import { Navbar } from './Navbar';
-import { FooterCentered } from './Footer';
-import { FeaturesCards } from './Cards';
-// import { AboutSkillsToggle } from './AboutMeToggle';
+import { Home } from './Home/Home';
+import { Navbar } from './Navbar/Navbar';
+import { FooterCentered } from './Footer/Footer';
+import { FeaturesCards } from './Experience/Cards';
 import "./App.css";
+// import { AboutSkillsToggle } from './AboutMeToggle';
 import '@mantine/core/styles.css';
-import Projects from "./card/Projects";
+import Projects from './Projects/Projects';
+
 
 function App() {
 
