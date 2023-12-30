@@ -1,6 +1,6 @@
 .card {
   background-color: var(--mantine-color-body);
-  width: 300px; /* Increased width by 1.5 times */
+  width: 350px; /* Increased width by 1.5 times */
   margin: 0px auto; /* Adjust as needed */
   height: fit-content; /* Keeps height flexible to content */
   padding: 1.2rem; /* Adjust padding - you can also scale this by 1.5 */
@@ -9,6 +9,6 @@
 
 .avatar {
   border: 2px solid var(--mantine-color-body); /* Adjusted border size */
-  width: 100px; /* Larger avatar */
+  width: 120px; /* Larger avatar */
   height: 100px; /* Make sure to keep it a square */
 }

@@ -31,10 +31,10 @@ export function UserCardImage() {
       />
       <Avatar
         src={pic}
-        size={80}
+        size={130}
         radius={80}
         mx="auto"
-        mt={-30}
+        mt={-50}
         className={classes.avatar}
       />
       <Text ta="center" fz="lg" fw={500} mt="sm">
@@ -46,9 +46,18 @@ export function UserCardImage() {
       <Group mt="md" justify="center" gap={30}>
         {items}
       </Group>
-      {/* <Button fullWidth radius="md" mt="xl" size="md" variant="default">
-        View Resume
-      </Button> */}
+      <Text ta="center" fz="lg" fw={500} mt="sm">
+      Rensselaer Polytechnic Institute
+      </Text>
+      <Text ta="center" fz="sm" c="dimmed">
+        College
+      </Text>
+      <Text ta="center" fz="lg" fw={500} mt="sm">
+        23nikulp@gmail.com
+      </Text>
+      <Text ta="center" fz="sm" c="dimmed">
+        Email
+      </Text>
     </Card>
   );
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text } from '@mantine/core';
-import classes from '../Home/Home.module.css';
+import classes from './Home.module.css';
 import { motion } from 'framer-motion';
 import './GradientSegmented.module.css';
+import "./Skills.css";
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -12,6 +13,14 @@ const textVariants = {
 const AboutMe = () => {
     return ( 
         <motion.div initial="hidden" whileInView="visible" variants={textVariants}>
+
+            <h1 className={classes.title}>
+                <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+                    About Me!
+                </Text>
+            </h1>
+
+            <br></br>
 
             <p className={classes.description}>
                 <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
@@ -33,6 +42,7 @@ const AboutMe = () => {
                 Joining your team would be an exciting opportunity to grow and make meaningful contributions. Let's connect and explore the potential for collaboration!
                 </Text>
             </p>
+
         </motion.div>
      );
 }
