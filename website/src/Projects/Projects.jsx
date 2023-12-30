@@ -18,7 +18,8 @@ const cardData = [
         title: "Voice-Enabled Math Solver: Integrating ChatGPT and Wolfram for Accessible Equation Processing",
         content: "Revolutionizing math accessibility with just 3 keys, our project empowers the visually impaired to solve equations through voice, delivering intuitive auditory responses. Simplicity changes the world.",
         img: math,
-        tags: ["WOLFRAM ALPHA", "VOICE RECOGNITION", "OPEN AI"]
+        tags: ["WOLFRAM ALPHA", "VOICE RECOGNITION", "OPEN AI"],
+        link: "https://github.com/Nikulp23/math-whisperer"
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ const cardData = [
         title: "Find cheapest products near you in one click!",
         content: "CartX Vision is a dynamic React/JavaScript project aimed at revolutionizing the shopping experience by finding the most cost-effective products in local stores. With its innovative backend, CartX Vision makes API calls and web scrapes local store websites to compare item prices, ensuring users get the best deals available.",
         img: cartx,
-        tags: ["REACT", "JAVASCRIPT", "WEBSCRAPING", "GITHUB WORKFLOW", "API"]
+        tags: ["REACT", "JAVASCRIPT", "WEBSCRAPING", "GITHUB WORKFLOW", "API"],
+        link: "https://github.com/Nikulp23/CartX"
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ const cardData = [
         title: "Image to WebSearch Bridge using OPENAI and BING SEARCH ENGINE",
         content: "This innovative tool uses the power of OpenAI's amazing image recognition technology to analyze visual content and extract pertinent details. Leveraging these insights, it seamlessly interfaces with the Bing Search Engine, translating visual data into comprehensive web searches.",
         img: chat_bing,
-        tags: ["OPENAI", "BING API", "REACT", "JAVASCRIPT", "AZURE"]
+        tags: ["OPENAI", "BING API", "REACT", "JAVASCRIPT", "AZURE"],
+        link: "https://github.com/Nikulp23/Projects/tree/main/Instagram%20Clone"
     },
     {
         id: 4,
@@ -42,7 +45,8 @@ const cardData = [
         title: "Enhanced User Navigation: Dynamic Maps Page in React",
         content: "Developed an interactive maps page using React and CSS for HackRPI's web application, enhancing user navigation and data interaction for over 600 participants in a hackathon setting.",
         img: hackrpi,
-        tags: ["FRONTEND", "REACT", "CSS"]
+        tags: ["FRONTEND", "REACT", "CSS"],
+        link: "https://github.com/Nikulp23/HackRPI-Website2023"
     },
     {
         id: 5,
@@ -50,7 +54,8 @@ const cardData = [
         title: "High Performance Computational Geometry Library",
         content: " I developed algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using methods like the quadratic formula. This work significantly enhances the library's capabilities in computational geometry, enabling high-performance computations for a wide range of applications.",
         img: glibby,
-        tags: ["C++", "CMAKE", "GITHUB"] // Example tags
+        tags: ["C++", "CMAKE", "GITHUB"],
+        link: "https://github.com/Nikulp23/glibby"
     }
 ];
 
@@ -61,7 +66,8 @@ const Projects = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        // fade:true,
     };
 
     return (
@@ -92,17 +98,23 @@ const Projects = () => {
                                 </div>
                                 <div className='content'>
                                     <div className="card-header">
-                                        <div className="card-type">{card.type}</div>
-                                        <div className="latest-article">View</div>
+                                        <div className="card-type name">{card.type}</div>
+
+                                        <a href={card.link} target="_blank" rel="noopener noreferrer">
+                                            <div className="latest-article">View</div>
+                                        </a>
+
                                     </div>
                                     <div className="card-content">
-                                        <h2>{card.title}</h2>
+                                        <h2 className="card-title">{card.title}</h2>
                                         <p>{card.content}</p>
                                     </div>
                                     <div className="blog-preview__bottom">
-                                        {card.tags.map((tag, index) => (
-                                            <div key={index} className="card-type">{tag}</div>
-                                        ))}
+                                    {card.tags.map((tag, index) => (
+                                    <div key={index} className="card-type" style={{transitionDelay: `${index * 100}ms`, opacity: 1, transform: 'translateY(0)'}}>
+                                        {tag}
+                                    </div>
+                                    ))}
                                     </div>
                                 </div>
                             </article>

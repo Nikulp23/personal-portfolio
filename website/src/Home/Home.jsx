@@ -1,6 +1,9 @@
 import { Container, Text, Button } from '@mantine/core';
 import classes from './Home.module.css';
 import { motion } from 'framer-motion';
+import ReactTyped from 'react-typed';
+import pdf from "./resume.pdf";
+
 
 // Define animation variants
 const containerVariants = {
@@ -31,26 +34,29 @@ export function Home() {
           <br></br>
         </h1>
 
+        <h1 className={`${classes.title} typewriter`}>
 
-        <h1 className={classes.title} typewriter>
-          <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
-            A Full Stack Developer
-          </Text>{' '}
-
-          <br></br>
-          
+          <ReactTyped
+            strings={["Full Stack Developer", "Computer Science Student"]}
+            typeSpeed={70}
+            backSpeed={70}
+            backDelay={1}
+            loop
+            smartBackspace
+          />
         </h1>
 
         {/* Buttons on the home page */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '25px' }}>
             <Button
                 component="a"
-                href="https://github.com/mantinedev/mantine"
+                href={pdf}
+                target="_blank"  // Opens the link in a new tab
                 size="l"
                 variant="gradient"
                 gradient={{ from: 'blue', to: 'cyan' }}
-                rightSection=''
-                style={{ marginRight: '10px' }}  // Adding margin to the right of the first button
+                style={{ marginRight: '10px' }}
+                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
             >
                 Show Resume
             </Button>
@@ -61,6 +67,7 @@ export function Home() {
                 size="l"
                 variant="default"
                 leftSection=''
+                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
             >
                 Contact Me
             </Button>

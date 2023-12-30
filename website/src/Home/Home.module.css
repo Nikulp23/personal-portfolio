@@ -110,3 +110,16 @@ h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: aqua;
 }
+
+/* Home.module.css */
+.animatedButton {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow; /* Optimize for animations */
+}
+
+.animatedButton:hover,
+.animatedButton:focus { /* Also add focus for accessibility */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+

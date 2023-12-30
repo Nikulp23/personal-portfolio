@@ -4,7 +4,6 @@ import pic from './profile.png';
 
 const stats = [
   { value: '3.65', label: 'GPA' },
-  { value: 'Sophomore', label: 'Current'},
   { value: 'May 2026', label: 'Graduation' },
 ];
 
@@ -47,9 +46,9 @@ export function UserCardImage() {
       <Group mt="md" justify="center" gap={30}>
         {items}
       </Group>
-      <Button fullWidth radius="md" mt="xl" size="md" variant="default">
+      {/* <Button fullWidth radius="md" mt="xl" size="md" variant="default">
         View Resume
-      </Button>
+      </Button> */}
     </Card>
   );
 }

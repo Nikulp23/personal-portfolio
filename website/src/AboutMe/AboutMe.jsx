@@ -12,11 +12,7 @@ const textVariants = {
 const AboutMe = () => {
     return ( 
         <motion.div initial="hidden" whileInView="visible" variants={textVariants}>
-            <h1 className={classes.title}>
-                <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-                About Me
-                </Text>
-            </h1>
+
             <p className={classes.description}>
                 <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
                 Hello, I'm Nikul Patel, a Computer Science and ITWS student at Rensselaer Polytechnic Institute with a fervent passion for full-stack development. My journey in computer science is driven by a relentless pursuit of knowledge and a desire to turn innovative ideas into tangible solutions.

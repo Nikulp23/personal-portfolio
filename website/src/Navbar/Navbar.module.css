@@ -28,6 +28,8 @@ body {
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 
+  
+
   @media (max-width: $mantine-breakpoint-sm) {
     height: rem(42px);
     width: 100%;
@@ -56,3 +58,21 @@ body {
     padding-bottom: var(--mantine-spacing-xl);
     border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
   }
+
+  .activeLink {
+    border-bottom: 3px solid #238be6; /* Underline effect */
+  }
+
+  /* Home.module.css */
+.animatedButton {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow; /* Optimize for animations */
+}
+
+.animatedButton:hover,
+.animatedButton:focus { /* Also add focus for accessibility */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+

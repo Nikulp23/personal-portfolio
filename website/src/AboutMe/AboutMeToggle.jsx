@@ -34,25 +34,18 @@ export function AboutSkillsToggle() {
             <UserCardImage/>
           </div>
           <div className='right'>
+
+            <div className='header'>
+                <div
+                className="about-header">
+                  <GradientSegmentedControl onChange={handleSegmentChange} />
+              </div>
+            </div>
             
             <div className="content-area">
-
-            <div 
-            className="about-header" 
-            style={{ 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
-                width: '100%', 
-                backgroundColor: 'transparent',
-                boxSizing: 'border-box' 
-            }}
-            >
-            <GradientSegmentedControl onChange={handleSegmentChange} />
+               {showAbout ? (<AboutMe  />) : (<Skills />)}
             </div>
 
-              {showAbout ? (<AboutMe  />) : (<Skills />)}
-            </div>
           </div>
         </div>
       </MantineProvider>
