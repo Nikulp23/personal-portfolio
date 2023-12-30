@@ -49,7 +49,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://nikulp23.github.io/personal-portfolio",
+  "homepage": "https://Nikulp23.github.io/personal-portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
