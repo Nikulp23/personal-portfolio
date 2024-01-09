@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MantineProvider } from '@mantine/core';
-import classes from '../Home/Home.module.css';
 import { UserCardImage } from './UserCard';
 import AboutMe from './AboutMe';
 

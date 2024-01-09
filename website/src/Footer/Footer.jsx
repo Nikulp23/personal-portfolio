@@ -1,5 +1,5 @@
 import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandTwitter } from '@tabler/icons-react';
 import classes from './FooterCentered.module.css';
 import pdf from "./resume.pdf";
 

@@ -1,4 +1,4 @@
-import { Card, Avatar, Text, Group, Button } from '@mantine/core';
+import { Card, Avatar, Text, Group } from '@mantine/core';
 import classes from './UserCardImage.module.css';
 import pic from './profile.png';
 

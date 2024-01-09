@@ -19,7 +19,8 @@ const cardData = [
         content: "Revolutionizing math accessibility with just 3 keys, our project empowers the visually impaired to solve equations through voice, delivering intuitive auditory responses. Simplicity changes the world.",
         img: math,
         tags: ["WOLFRAM ALPHA", "VOICE RECOGNITION", "OPEN AI"],
-        link: "https://github.com/Nikulp23/math-whisperer"
+        link: "https://github.com/Nikulp23/math-whisperer",
+        alt: ""
     },
     {
         id: 2,
@@ -28,7 +29,8 @@ const cardData = [
         content: "CartX Vision is a dynamic React/JavaScript project aimed at revolutionizing the shopping experience by finding the most cost-effective products in local stores. With its innovative backend, CartX Vision makes API calls and web scrapes local store websites to compare item prices, ensuring users get the best deals available.",
         img: cartx,
         tags: ["REACT", "JAVASCRIPT", "WEBSCRAPING", "GITHUB WORKFLOW", "API"],
-        link: "https://github.com/Nikulp23/CartX"
+        link: "https://github.com/Nikulp23/CartX",
+        alt: ""
     },
     {
         id: 3,
@@ -37,7 +39,8 @@ const cardData = [
         content: "This innovative tool uses the power of OpenAI's amazing image recognition technology to analyze visual content and extract pertinent details. Leveraging these insights, it seamlessly interfaces with the Bing Search Engine, translating visual data into comprehensive web searches.",
         img: chat_bing,
         tags: ["OPENAI", "BING API", "REACT", "JAVASCRIPT", "AZURE"],
-        link: "https://github.com/Nikulp23/Projects/tree/main/Instagram%20Clone"
+        link: "https://github.com/Nikulp23/Projects/tree/main/Instagram%20Clone",
+        alt: ""
     },
     {
         id: 4,
@@ -46,7 +49,8 @@ const cardData = [
         content: "Developed an interactive maps page using React and CSS for HackRPI's web application, enhancing user navigation and data interaction for over 600 participants in a hackathon setting.",
         img: hackrpi,
         tags: ["FRONTEND", "REACT", "CSS"],
-        link: "https://github.com/Nikulp23/HackRPI-Website2023"
+        link: "https://github.com/Nikulp23/HackRPI-Website2023",
+        alt: ""
     },
     {
         id: 5,
@@ -55,7 +59,8 @@ const cardData = [
         content: " I developed algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using methods like the quadratic formula. This work significantly enhances the library's capabilities in computational geometry, enabling high-performance computations for a wide range of applications.",
         img: glibby,
         tags: ["C++", "CMAKE", "GITHUB"],
-        link: "https://github.com/Nikulp23/glibby"
+        link: "https://github.com/Nikulp23/glibby",
+        alt: ""
     }
 ];
 
@@ -94,7 +99,7 @@ const Projects = () => {
                         <div key={card.id}>
                             <article className="card">
                                 <div className='background'>
-                                    <img src={card.img} alt="Blog Preview Image" />
+                                    <img src={card.img} alt={card.alt} />
                                 </div>
                                 <div className='content'>
                                     <div className="card-header">

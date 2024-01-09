@@ -8,7 +8,6 @@ import "./App.css";
 import { AboutSkillsToggle } from './AboutMe/AboutMeToggle';
 import '@mantine/core/styles.css';
 import Projects from './Projects/Projects'; 
-import SkillsMindMap from './AboutMe/Skills';
 
 function App() {
 
