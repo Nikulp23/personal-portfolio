@@ -20,7 +20,7 @@ const cardData = [
         img: math,
         tags: ["WOLFRAM ALPHA", "VOICE RECOGNITION", "OPEN AI"],
         link: "https://github.com/Nikulp23/math-whisperer",
-        alt: ""
+        alt: "picture"
     },
     {
         id: 2,
