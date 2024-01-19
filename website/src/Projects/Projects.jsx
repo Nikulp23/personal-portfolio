@@ -30,7 +30,7 @@ const cardData = [
         img: cartx,
         tags: ["REACT", "JAVASCRIPT", "WEBSCRAPING", "GITHUB WORKFLOW", "API"],
         link: "https://github.com/Nikulp23/CartX",
-        alt: ""
+        alt: "cartx picture"
     },
     {
         id: 3,
