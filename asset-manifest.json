@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.b195fed1.css",
-    "main.js": "/personal-portfolio/static/js/main.e57730ef.js",
-    "static/media/plane_wallpaper.png": "/personal-portfolio/static/media/plane_wallpaper.c18e06cadd29b507c03a.png",
-    "static/media/wallpaper.png": "/personal-portfolio/static/media/wallpaper.e81b0ae324c7c11452c1.png",
-    "static/media/logo.png": "/personal-portfolio/static/media/logo.d87a8e018c1bb45aeddc.png",
-    "static/media/chat_bing.png": "/personal-portfolio/static/media/chat_bing.be6ce4b7c7d602f489a0.png",
-    "static/media/cartx.png": "/personal-portfolio/static/media/cartx.3a51e9a9e8145780f1c6.png",
-    "static/media/profile.png": "/personal-portfolio/static/media/profile.73ca8b1ea8a27e440b2a.png",
-    "static/media/hackrpi.png": "/personal-portfolio/static/media/hackrpi.37373350fdd34cb767b6.png",
-    "static/media/resume.pdf": "/personal-portfolio/static/media/resume.5ae97a10e66da53e81ca.pdf",
-    "static/media/biomed_logo.png": "/personal-portfolio/static/media/biomed_logo.5c3b14588abdd519a60a.png",
-    "static/media/glibby.png": "/personal-portfolio/static/media/glibby.dad20899d02c57630cc6.png",
-    "static/media/datastructures.png": "/personal-portfolio/static/media/datastructures.7f5347945578b2d9d3e8.png",
-    "static/media/math.png": "/personal-portfolio/static/media/math.6984327cf45eb9f53dee.png",
-    "static/media/slick.svg": "/personal-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/personal-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/personal-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/personal-portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/personal-portfolio/index.html",
-    "main.b195fed1.css.map": "/personal-portfolio/static/css/main.b195fed1.css.map",
-    "main.e57730ef.js.map": "/personal-portfolio/static/js/main.e57730ef.js.map"
+    "main.css": "/static/css/main.8ad277fc.css",
+    "main.js": "/static/js/main.e37b7815.js",
+    "static/media/plane_wallpaper.png": "/static/media/plane_wallpaper.c18e06cadd29b507c03a.png",
+    "static/media/wallpaper.png": "/static/media/wallpaper.e81b0ae324c7c11452c1.png",
+    "static/media/logo.png": "/static/media/logo.d87a8e018c1bb45aeddc.png",
+    "static/media/chat_bing.png": "/static/media/chat_bing.be6ce4b7c7d602f489a0.png",
+    "static/media/cartx.png": "/static/media/cartx.3a51e9a9e8145780f1c6.png",
+    "static/media/profile.png": "/static/media/profile.73ca8b1ea8a27e440b2a.png",
+    "static/media/hackrpi.png": "/static/media/hackrpi.37373350fdd34cb767b6.png",
+    "static/media/resume.pdf": "/static/media/resume.5ae97a10e66da53e81ca.pdf",
+    "static/media/biomed_logo.png": "/static/media/biomed_logo.5c3b14588abdd519a60a.png",
+    "static/media/glibby.png": "/static/media/glibby.dad20899d02c57630cc6.png",
+    "static/media/datastructures.png": "/static/media/datastructures.7f5347945578b2d9d3e8.png",
+    "static/media/math.png": "/static/media/math.6984327cf45eb9f53dee.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.8ad277fc.css.map": "/static/css/main.8ad277fc.css.map",
+    "main.e37b7815.js.map": "/static/js/main.e37b7815.js.map"
   },
   "entrypoints": [
-    "static/css/main.b195fed1.css",
-    "static/js/main.e57730ef.js"
+    "static/css/main.8ad277fc.css",
+    "static/js/main.e37b7815.js"
   ]
 }
