@@ -19,7 +19,7 @@ export function Navbar() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <img src={logo} alt="Logo" style={{ height: '40px' , width: '45px', marginLeft: '10px'}} /> {/* Use the logo here */}
+          <img src={logo} alt="Logo" style={{ height: '40px' , width: '45px', marginLeft: '10px', marginTop: '5px'}} /> {/* Use the logo here */}
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#home" 

@@ -12,6 +12,7 @@
 .inner {
   position: relative;
   z-index: 1;
+  margin-top: -100px;
 }
 
 .dots {
@@ -127,7 +128,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -136,10 +137,18 @@ h1 {
       justify-content: flex-start; 
       align-items: flex-start; 
   }
+
+  
 }
 
 @media (max-width: 767px) {
   .mobileTitleBreak {
       display: block;
+  }
+
+  .inner {
+    position: relative;
+    z-index: 1;
+    margin-top: -275px;
   }
 }

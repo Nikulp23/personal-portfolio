@@ -15,18 +15,18 @@ export function Home() {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-        window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
 
-        // Clean up
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    // Clean up
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <motion.div
@@ -34,65 +34,68 @@ export function Home() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center', // Center vertically
+        alignItems: 'center', // Center horizontally
+        height: '100vh', // Make the container full height of the viewport
+      }}
     >
-
       <Container size={700} className={classes.inner}>
-
-      <h1 className={classes.title}>
+        <h1 className={classes.title}>
           <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
-            Hello! <span className={classes.mobileTitleBreak}></span>  I'm 
+            Hello! <span className={classes.mobileTitleBreak}></span> I'm
           </Text>
 
           <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-              &nbsp;Nikul Patel
+            &nbsp;Nikul Patel
           </Text>
-      </h1>
+        </h1>
 
-      <h1 className={`${classes.title} typewriter`}>
+        <h1 className={`${classes.title} typewriter`}>
           {isMobile ? (
-              <span>Full Stack Developer</span>
+            <span>Full Stack Developer</span>
           ) : (
-              <ReactTyped
-                  strings={["Full Stack Developer", "Computer Science Student"]}
-                  typeSpeed={70}
-                  backSpeed={70}
-                  backDelay={1}
-                  loop
-                  smartBackspace
-              />
+            <ReactTyped
+              strings={["Full Stack Developer", "Computer Science Student"]}
+              typeSpeed={70}
+              backSpeed={70}
+              backDelay={1}
+              loop
+              smartBackspace
+            />
           )}
-      </h1>
+        </h1>
 
         {/* Buttons on the home page */}
         <div className={classes.buttonContainerHome}>
-            <Button
-                component="a"
-                href={pdf}
-                target="_blank"  // Opens the link in a new tab
-                size="l"
-                variant="gradient"
-                gradient={{ from: 'blue', to: 'cyan' }}
-                style={{ marginRight: '10px' }}
-                className={`${classes.control}  ${classes.animatedButton}`} // Apply animatedButton class
-            >
-                Show Resume
-            </Button>
+          <Button
+            component="a"
+            href={pdf}
+            target="_blank" // Opens the link in a new tab
+            size="l"
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan' }}
+            style={{ marginRight: '10px' }}
+            className={`${classes.control}  ${classes.animatedButton}`} // Apply animatedButton class
+          >
+            <h3>Show Resume</h3>
+          </Button>
 
-            <Button
-                component="a"
-                href="https://github.com/mantinedev/mantine"
-                size="l"
-                variant="default"
-                leftSection=''
-                gradient={{ from: 'white', to: 'white' }}
-                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
-            >
-                Contact Me
-            </Button>
-          </div>
-
+          <Button
+            component="a"
+            href="https://github.com/mantinedev/mantine"
+            size="l"
+            variant="default"
+            leftSection=''
+            gradient={{ from: 'white', to: 'white' }}
+            className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
+          >
+            <h3>Contact Me</h3>
+          </Button>
+        </div>
       </Container>
-
     </motion.div>
   );
 }
