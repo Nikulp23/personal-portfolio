@@ -9,6 +9,7 @@ import {
   } from '@mantine/core';
   import classes from './FeaturesCards.module.css';
   import { motion } from 'framer-motion';
+  import React from 'react';
 
   import rcos from './logos/rcos.png';
   import biomed_logo from './logos/biomed_logo.png';
@@ -28,23 +29,31 @@ import {
     {
       title: 'Undergraduate Data Structures Teaching Assistant',
       date: 'AUG 2023 - Present',
-      description: 'Provided comprehensive support to students learning complex data structures in C++, and delivered targeted guidance in employing code optimization and debugging tools for the development of efficient and robust programming solutions. Add couple more lineof info here',
+      description: [
+        '- Managing weekly lab sessions and office hours focused on Data Structures, overseeing student progress through checkpoints, and providing personalized academic support for homework and lab assignments.',
+        '- Efficiently assisting professors in scanning and grading exams using advanced grading software for over 350 students, ensuring timely completion of grading tasks within a single day of time.',
+      ],
       image: datastructures,
     },
     {
       title: 'Open Source Project Lead - CARTX',
       date: 'AUG 2023 - Present',
-      description:
-          'Led the technical vision in developing a responsive application with React.js. Pioneered the use of APIs and Web Scraping techniques to collect real-time pricing data from various online retailers. Add couple of lines of information here. One more and one more line.',
-      image: rcos,
+      description:[
+        '- Developing a React/Javascript-based initiative aimed at optimizing consumer shopping experiences in local areas.',
+        '- Led the development of a backend system capable of making API calls and web scraping to compare prices from various local stores.',
+        '- Collaborating with a team of developers and ensuring the successful implementation of key features and overall project execution.'
+      ],
+          image: rcos,
     },
     {
       title: 'Work Study Biomedical Engineering Department',
       date: 'AUG 2023 - Present',
-      description:
-        'Led the development of a web-based academic system for Biomedical Students, utilizing HTML and JavaScript for front-end design and implementing a secure, scalable MySQL database architecture to enable personalized academic planning and advisor access for a growing user base',
+      description: [
+        '- Initiated the development of a web-based academic system for Biomedical students by successfully web-scraping course information from the college website and organizing it into MySQL table.',
+        '- Responsible for a range of administrative tasks, including typing, data entry, and document scanning along with providing clerical support such as filing, shredding, and conducting campus errands.',
+      ],
       image: biomed_logo,
-    },
+    }    
   ];
   
   export function FeaturesCards() {
@@ -85,9 +94,14 @@ import {
           </Badge>
         </div>
 
-        <Text fz="sm" c="dimmed" mt="sm" className={classes.cardDescription}>
-        {feature.description}
-      </Text>
+        <Text fz="sm" mt="sm" className={classes.cardDescription}>
+          {feature.description.map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              {index < feature.description.length - 1 && <br />} <br/>
+            </React.Fragment>
+          ))}
+        </Text>
 
       </Card>
 
