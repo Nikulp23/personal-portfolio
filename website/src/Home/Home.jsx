@@ -3,7 +3,7 @@ import classes from './Home.module.css';
 import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
 import pdf from "./resume.pdf";
-
+import React, { useState, useEffect } from 'react';
 
 // Define animation variants
 const containerVariants = {
@@ -12,6 +12,22 @@ const containerVariants = {
 };
 
 export function Home() {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
   return (
     <motion.div
       className={classes.wrapper}
@@ -22,32 +38,33 @@ export function Home() {
 
       <Container size={700} className={classes.inner}>
 
-        <h1 className={classes.title}>
+      <h1 className={classes.title}>
           <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
-            Hello! I'm
-          </Text>{' '}
+            Hello! <span className={classes.mobileTitleBreak}></span>  I'm 
+          </Text>
 
           <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
-            Nikul Patel
-          </Text>{' '}
+              &nbsp;Nikul Patel
+          </Text>
+      </h1>
 
-          <br></br>
-        </h1>
-
-        <h1 className={`${classes.title} typewriter`}>
-
-          <ReactTyped
-            strings={["Full Stack Developer", "Computer Science Student"]}
-            typeSpeed={70}
-            backSpeed={70}
-            backDelay={1}
-            loop
-            smartBackspace
-          />
-        </h1>
+      <h1 className={`${classes.title} typewriter`}>
+          {isMobile ? (
+              <span>Full Stack Developer</span>
+          ) : (
+              <ReactTyped
+                  strings={["Full Stack Developer", "Computer Science Student"]}
+                  typeSpeed={70}
+                  backSpeed={70}
+                  backDelay={1}
+                  loop
+                  smartBackspace
+              />
+          )}
+      </h1>
 
         {/* Buttons on the home page */}
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '25px' }}>
+        <div className={classes.buttonContainerHome}>
             <Button
                 component="a"
                 href={pdf}
@@ -56,7 +73,7 @@ export function Home() {
                 variant="gradient"
                 gradient={{ from: 'blue', to: 'cyan' }}
                 style={{ marginRight: '10px' }}
-                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
+                className={`${classes.control}  ${classes.animated}`} // Apply animatedButton class
             >
                 Show Resume
             </Button>
@@ -67,11 +84,12 @@ export function Home() {
                 size="l"
                 variant="default"
                 leftSection=''
-                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
+                gradient={{ from: 'white', to: 'white' }}
+                className={`${classes.control} ${classes.animated}`} // Apply animatedButton class
             >
                 Contact Me
             </Button>
-        </div>     
+          </div>
 
       </Container>
 

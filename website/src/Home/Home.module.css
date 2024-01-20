@@ -118,8 +118,28 @@ h1 {
 }
 
 .animatedButton:hover,
-.animatedButton:focus { /* Also add focus for accessibility */
-  transform: scale(1.05); /* Slightly enlarge the button */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+.animatedButton:focus { 
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.buttonContainerHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+  .buttonContainerHome {
+      flex-direction: column;
+      justify-content: flex-start; 
+      align-items: flex-start; 
+  }
+}
+
+@media (max-width: 767px) {
+  .mobileTitleBreak {
+      display: block;
+  }
+}
