@@ -25,7 +25,7 @@ body {
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-  font-weight: 500;
+  font-weight: 1000;
   font-size: var(--mantine-font-size-sm);
 
   /* @media (max-width: $mantine-breakpoint-sm) {
@@ -58,7 +58,7 @@ body {
   }
 
   .activeLink {
-    border-bottom: 3px solid #238be6; /* Underline effect */
+    border-bottom: 4px solid #238be6; /* Underline effect */
   }
 
   /* Home.module.css */

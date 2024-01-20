@@ -19,24 +19,24 @@ export function Navbar() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <img src={logo} alt="Logo" style={{ height: '40px' , width: '40px', marginLeft: '10px'}} /> {/* Use the logo here */}
+          <img src={logo} alt="Logo" style={{ height: '40px' , width: '45px', marginLeft: '10px'}} /> {/* Use the logo here */}
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#home" 
              className={`${classes.link} ${activeLink === 'home' ? classes.activeLink : ''}`}
-             onClick={() => handleSetActiveLink('home')}>Home</a>
+             onClick={() => handleSetActiveLink('home')}><h3>Home</h3></a>
 
             <a href="#about" 
              className={`${classes.link} ${activeLink === 'about' ? classes.activeLink : ''}`}
-             onClick={() => handleSetActiveLink('about')}>About Me</a>
+             onClick={() => handleSetActiveLink('about')}><h3>About Me</h3></a>
 
             <a href="#experience" 
              className={`${classes.link} ${activeLink === 'experience' ? classes.activeLink : ''}`}
-             onClick={() => handleSetActiveLink('experience')}>Work Experience</a>
+             onClick={() => handleSetActiveLink('experience')}><h3>Work Experience</h3></a>
 
             <a href="#projects" 
              className={`${classes.link} ${activeLink === 'projects' ? classes.activeLink : ''}`}
-             onClick={() => handleSetActiveLink('projects')}>Projects</a>
+             onClick={() => handleSetActiveLink('projects')}><h3>Projects</h3></a>
 
           </Group>
 
@@ -64,7 +64,7 @@ export function Navbar() {
                 </svg>
             }
           >
-            LinkedIn
+            <h3>LinkedIn</h3>
           </Button>
 
           <Button
@@ -76,7 +76,7 @@ export function Navbar() {
             className={`${classes.control} ${classes.animatedButton} ${classes.buttonGroup}`} // Apply animatedButton class
             leftSection={<GithubIcon size={20} />}
           >
-            GitHub
+            <h3>GitHub</h3>
           </Button>
 
           </Group>
