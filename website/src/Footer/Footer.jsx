@@ -1,5 +1,5 @@
 import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
-import { IconBrandTwitter } from '@tabler/icons-react';
+import { IconBrandInstagram } from '@tabler/icons-react';
 import classes from './FooterCentered.module.css';
 import pdf from "./resume.pdf";
 
@@ -15,7 +15,6 @@ export function FooterCentered() {
       key={link.label}
       href={link.link}
       lh={1}
-      onClick={(event) => event.preventDefault()}
       size="sm"
     >
       {link.label}
@@ -25,22 +24,15 @@ export function FooterCentered() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        {/* <MantineLogo size={28} /> */}
-        {/* Nikul's Logo */}
         © 2024 Nikul Patel
 
         <Group className={classes.links}>{items}</Group>
 
         <Group gap="xs" justify="flex-end" wrap="nowrap">
           <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          {/* <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-          </ActionIcon> */}
+          </ActionIcon>
+
         </Group>
       </div>
     </div>
