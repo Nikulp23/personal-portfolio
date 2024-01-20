@@ -49,8 +49,20 @@ export function Navbar() {
             target="_blank"  // Opens the link in a new tab
             variant="gradient"
             gradient={{ from: 'blue', to: 'cyan' }}
-            className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
-            leftSection={<svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>}
+            className={`${classes.control} ${classes.animatedButton} ${classes.buttonGroup}`} // Apply animatedButton class
+            leftSection={
+              <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  x="0px" 
+                  y="0px" 
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 50 50" 
+                  style={{ fill: "#FFFFFF" }}
+                >
+                  <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                </svg>
+            }
           >
             LinkedIn
           </Button>
@@ -61,7 +73,7 @@ export function Navbar() {
             target="_blank"  // Opens the link in a new tab
             size="l"
             variant="default"
-            className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
+            className={`${classes.control} ${classes.animatedButton} ${classes.buttonGroup}`} // Apply animatedButton class
             leftSection={<GithubIcon size={20} />}
           >
             GitHub
@@ -72,6 +84,8 @@ export function Navbar() {
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
+
+      {/* FOR SMALLER SCREENS */}
 
       {/* Closed Navbar */}
       <Drawer
@@ -86,16 +100,16 @@ export function Navbar() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 
-          <a href="#home" className={classes.link}>
+          <a href="#home" className={classes.link} onClick={closeDrawer}>
             Home
           </a>
-          <a href="#about" className={classes.link}>
-              About Me
+          <a href="#about" className={classes.link} onClick={closeDrawer}>
+            About Me
           </a>
-          <a href="experience" className={classes.link}>
+          <a href="#experience" className={classes.link} onClick={closeDrawer}>
             Work Experience
           </a>
-          <a href="projects" className={classes.link}>
+          <a href="#projects" className={classes.link} onClick={closeDrawer}>
             Projects
           </a>
 
@@ -103,28 +117,40 @@ export function Navbar() {
 
           <Group justify="center" grow pb="xl" px="md">
 
-          <Button
-            component="a"
-            href="https://linkedin.com/in/nikulpatel23"
-            target="_blank"  // Opens the link in a new tab
-            size="l"
-            className={classes.control}
-            leftSection={<logo size={20} />}
-          >
-            Linkedin
-          </Button>
+            <Button
+              component="a"
+              href="https://linkedin.com/in/nikulpatel23"
+              target="_blank"  // Opens the link in a new tab
+              size="l"
+              className={`${classes.control}`}
+              leftSection={
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    x="0px" 
+                    y="0px" 
+                    width="25" 
+                    height="25" 
+                    viewBox="0 0 50 50" 
+                    style={{ fill: "#FFFFFF" }}
+                  >
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                  </svg>
+              }
+            >
+              LinkedIn
+            </Button>
 
-          <Button
-            component="a"
-            href="https://github.com/Nikulp23"
-            target="_blank"  // Opens the link in a new tab
-            size="l"
-            variant="default"
-            className={classes.control}
-            leftSection={<GithubIcon size={20} />}
-          >
-            GitHub
-          </Button>
+            <Button
+              component="a"
+              href="https://github.com/Nikulp23"
+              target="_blank"  // Opens the link in a new tab
+              size="l"
+              variant="default"
+              className={`${classes.control}`}
+              leftSection={<GithubIcon size={20} />}
+            >
+              GitHub
+            </Button>
 
           </Group>
         </ScrollArea>
