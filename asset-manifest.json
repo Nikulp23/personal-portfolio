@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f6b10cc.css",
-    "main.js": "/static/js/main.5ec74501.js",
+    "main.css": "/static/css/main.8c9a86e7.css",
+    "main.js": "/static/js/main.d456d1ea.js",
     "static/media/plane_wallpaper.png": "/static/media/plane_wallpaper.c18e06cadd29b507c03a.png",
     "static/media/wallpaper.png": "/static/media/wallpaper.e81b0ae324c7c11452c1.png",
-    "static/media/logo.png": "/static/media/logo.d87a8e018c1bb45aeddc.png",
     "static/media/chat_bing.png": "/static/media/chat_bing.be6ce4b7c7d602f489a0.png",
     "static/media/cartx.png": "/static/media/cartx.3a51e9a9e8145780f1c6.png",
     "static/media/profile.png": "/static/media/profile.73ca8b1ea8a27e440b2a.png",
@@ -13,17 +12,18 @@
     "static/media/biomed_logo.png": "/static/media/biomed_logo.5c3b14588abdd519a60a.png",
     "static/media/glibby.png": "/static/media/glibby.dad20899d02c57630cc6.png",
     "static/media/datastructures.png": "/static/media/datastructures.7f5347945578b2d9d3e8.png",
+    "static/media/logo.png": "/static/media/logo.02407f714a3c99229930.png",
     "static/media/math.png": "/static/media/math.6984327cf45eb9f53dee.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.4f6b10cc.css.map": "/static/css/main.4f6b10cc.css.map",
-    "main.5ec74501.js.map": "/static/js/main.5ec74501.js.map"
+    "main.8c9a86e7.css.map": "/static/css/main.8c9a86e7.css.map",
+    "main.d456d1ea.js.map": "/static/js/main.d456d1ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6b10cc.css",
-    "static/js/main.5ec74501.js"
+    "static/css/main.8c9a86e7.css",
+    "static/js/main.d456d1ea.js"
   ]
 }
