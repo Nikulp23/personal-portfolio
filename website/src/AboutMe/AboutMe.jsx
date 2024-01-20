@@ -2,8 +2,6 @@ import React from 'react';
 import { Text } from '@mantine/core';
 import classes from './Home.module.css';
 import { motion } from 'framer-motion';
-import './GradientSegmented.module.css';
-import "./Skills.css";
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },

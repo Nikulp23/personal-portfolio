@@ -1,14 +1,33 @@
 .card {
   background-color: var(--mantine-color-body);
-  width: 350px; /* Increased width by 1.5 times */
-  margin: 0px auto; /* Adjust as needed */
-  height: fit-content; /* Keeps height flexible to content */
-  padding: 1.2rem; /* Adjust padding - you can also scale this by 1.5 */
-  font-size: 1.125rem; /* Optional: Adjust font size if necessary */
+  width: 100%; /* Use full width */
+  max-width: 350px; /* Limit the maximum width */
+  min-width: 300px; /* Ensure it doesn't get too narrow */
+  margin: 0 auto; /* Center horizontally */
+  height: fit-content;
+  padding: 1.2rem;
+  font-size: 1.125rem;
 }
 
 .avatar {
-  border: 2px solid var(--mantine-color-body); /* Adjusted border size */
-  width: 120px; /* Larger avatar */
-  height: 100px; /* Make sure to keep it a square */
+  border: 2px solid var(--mantine-color-body);
+  width: 120px; /* You might want to increase this */
+  height: 120px;
+  margin-top: -60px; /* Adjust this value to move the avatar up or down */
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 1rem; /* Adjust padding for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-right: 35px;
+  }
+
+  .avatar {
+    width: 100px; /* Adjust avatar size for smaller screens */
+    height: 100px;
+    margin-top: -50px; /* Adjust the negative margin to move the avatar up */
+  }
+
+  /* Add any additional styling adjustments for smaller screens here */
 }

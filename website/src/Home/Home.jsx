@@ -73,7 +73,7 @@ export function Home() {
                 variant="gradient"
                 gradient={{ from: 'blue', to: 'cyan' }}
                 style={{ marginRight: '10px' }}
-                className={`${classes.control}  ${classes.animated}`} // Apply animatedButton class
+                className={`${classes.control}  ${classes.animatedButton}`} // Apply animatedButton class
             >
                 Show Resume
             </Button>
@@ -85,7 +85,7 @@ export function Home() {
                 variant="default"
                 leftSection=''
                 gradient={{ from: 'white', to: 'white' }}
-                className={`${classes.control} ${classes.animated}`} // Apply animatedButton class
+                className={`${classes.control} ${classes.animatedButton}`} // Apply animatedButton class
             >
                 Contact Me
             </Button>
