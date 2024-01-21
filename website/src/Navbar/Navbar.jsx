@@ -52,7 +52,7 @@ export function Navbar() {
             className={`${classes.control} ${classes.animatedButton} ${classes.buttonGroup}`} // Apply animatedButton class
             leftSection={
               <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns="https://www.w3.org/2000/svg" 
                   x="0px" 
                   y="0px" 
                   width="20" 
@@ -125,7 +125,7 @@ export function Navbar() {
               className={`${classes.control}`}
               leftSection={
                 <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns="https://www.w3.org/2000/svg" 
                     x="0px" 
                     y="0px" 
                     width="25" 
