@@ -85,7 +85,7 @@ export function Home() {
 
           <Button
             component="a"
-            href="https://github.com/mantinedev/mantine"
+            href=""
             size="l"
             variant="default"
             leftSection=''
