@@ -27,16 +27,6 @@ import {
 
   const mockdata = [
     {
-      title: 'Undergraduate Data Structures Teaching Assistant',
-      date: 'AUG 2023 - Present',
-      description: [
-        '- Managing weekly lab sessions and office hours focused on Data Structures and Algorithms, overseeing student progress through checkpoints, and providing personalized academic support for C++ assignments.',
-        '- Efficiently assisting professors in scanning and grading exams for over 450 students, ensuring delivery of grading tasks within a single day.',
-        '',
-      ],
-      image: datastructures,
-    },
-    {
       title: 'Back End Technical Lead - CARTX',
       date: 'AUG 2023 - Present',
       description:[
@@ -46,14 +36,24 @@ import {
           image: rcos,
     },
     {
-      title: 'Work Study Biomedical Engineering Department',
+      title: 'Web Developer Biomedical Engineering Department',
       date: 'AUG 2023 - Present',
       description: [
         '- Initiated the development of a web-based academic system for Biomedical Students by web-scraping course information for over 46 majors from the college website and organizing it into SQL tables.',
         '- Scheduled to design and implement RESTful APIs for efficient data retrieval and manipulation, ensuring seamless integration between the client-side interface, server-side servers and databases.',
       ],
       image: biomed_logo,
-    }    
+    },
+    {
+      title: 'Undergraduate Data Structures Teaching Assistant',
+      date: 'AUG 2023 - Present',
+      description: [
+        '- Managing weekly lab sessions and office hours focused on Data Structures and Algorithms, overseeing student progress through checkpoints, and providing personalized academic support for C++ assignments.',
+        '- Efficiently assisting professors in scanning and grading exams for over 450 students, ensuring delivery of grading tasks within a single day.',
+        '',
+      ],
+      image: datastructures,
+    }
   ];
   
   export function FeaturesCards() {
