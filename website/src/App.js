@@ -20,7 +20,9 @@ function App() {
         <div className='right'></div>
       </div>
 
-      <AboutSkillsToggle />
+      <div className='about' id='about'>
+        <AboutSkillsToggle />
+      </div>
 
       <div className='Experience' id='experience'>
         <FeaturesCards />

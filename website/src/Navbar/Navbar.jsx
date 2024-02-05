@@ -2,18 +2,40 @@ import {Group, Button, Box, Burger, Drawer, Divider, ScrollArea, rem} from '@man
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Navbar.module.css';
 import { GithubIcon } from '@mantinex/dev-icons';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from "./logo.png";
 
 export function Navbar() {
 
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-
   const [activeLink, setActiveLink] = useState('home');
 
   const handleSetActiveLink = (link) => {
     setActiveLink(link);
   };
+
+  // automatic changes active link
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const currentActiveSectionId = entry.target.id;
+          setActiveLink(currentActiveSectionId);
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    // Adjust the selector to match your div elements with IDs
+    document.querySelectorAll('div[id]').forEach((div) => {
+      observer.observe(div);
+    });
+  
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  
+
 
   return (
     <Box pb={120}>
@@ -25,11 +47,11 @@ export function Navbar() {
         </a>
 
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#home" 
+            <a href="#home"
              className={`${classes.link} ${activeLink === 'home' ? classes.activeLink : ''}`}
              onClick={() => handleSetActiveLink('home')}><h3>Home</h3></a>
 
-            <a href="#about" 
+            <a href="#about"
              className={`${classes.link} ${activeLink === 'about' ? classes.activeLink : ''}`}
              onClick={() => handleSetActiveLink('about')}><h3>About Me</h3></a>
 
