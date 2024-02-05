@@ -30,18 +30,18 @@ import {
       title: 'Undergraduate Data Structures Teaching Assistant',
       date: 'AUG 2023 - Present',
       description: [
-        '- Managing weekly lab sessions and office hours focused on Data Structures, overseeing student progress through checkpoints, and providing personalized academic support for homework and lab assignments.',
-        '- Efficiently assisting professors in scanning and grading exams using advanced grading software for over 350 students, ensuring timely completion of grading tasks within a single day of time.',
+        '- Managing weekly lab sessions and office hours focused on Data Structures and Algorithms, overseeing student progress through checkpoints, and providing personalized academic support for C++ assignments.',
+        '- Efficiently assisting professors in scanning and grading exams for over 450 students, ensuring delivery of grading tasks within a single day.',
+        '',
       ],
       image: datastructures,
     },
     {
-      title: 'Open Source Project Lead - CARTX',
+      title: 'Back End Technical Lead - CARTX',
       date: 'AUG 2023 - Present',
       description:[
-        '- Developing a React/Javascript-based initiative aimed at optimizing consumer shopping experiences in local areas.',
-        '- Led the development of a backend system capable of making API calls and web scraping to compare prices from various local stores.',
-        '- Collaborating with a team of developers and ensuring the successful implementation of key features and overall project execution.'
+        '- Designed a backend system to make custom API calls, implemented web scraping routes using Python to retrieve data for over 1000 items in JSON format, and stored the information in a databases.',
+        '- Configured a remote-accessible MySQL server, established communication with the database, resulting in a 50% reduction in data processing time, and responsible for CRUD operations.'
       ],
           image: rcos,
     },
@@ -49,8 +49,8 @@ import {
       title: 'Work Study Biomedical Engineering Department',
       date: 'AUG 2023 - Present',
       description: [
-        '- Initiated the development of a web-based academic system for Biomedical students by successfully web-scraping course information from the college website and organizing it into MySQL table.',
-        '- Responsible for a range of administrative tasks, including typing, data entry, and document scanning along with providing clerical support such as filing, shredding, and conducting campus errands.',
+        '- Initiated the development of a web-based academic system for Biomedical Students by web-scraping course information for over 46 majors from the college website and organizing it into SQL tables.',
+        '- Scheduled to design and implement RESTful APIs for efficient data retrieval and manipulation, ensuring seamless integration between the client-side interface, server-side servers and databases.',
       ],
       image: biomed_logo,
     }    
@@ -78,7 +78,7 @@ import {
         className={classes.cardWrapper} // Additional class for styling
       >
 
-      <Card shadow="md" radius="md" className={classes.card} padding="xl">
+      <Card shadow="md" radius="md" className="{classes.card} test" padding="xl">
       
         {standardizeImage(feature.image, feature.title)}
 
