@@ -5,7 +5,7 @@ import pdf from "./resume.pdf";
 
 const links = [
   { link: pdf, label: 'View Resume' },
-  { link: '#', label: 'Contact Me' },
+  // { link: '#', label: 'Contact Me' },
 ];
 
 export function FooterCentered() {

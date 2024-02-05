@@ -85,7 +85,7 @@ export function Home() {
 
           <Button
             component="a"
-            href=""
+            href="#contact"
             size="l"
             variant="default"
             leftSection=''

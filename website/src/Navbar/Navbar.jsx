@@ -16,6 +16,7 @@ export function Navbar() {
 
   // automatic changes active link
   useEffect(() => {
+    setActiveLink('home');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -25,7 +26,6 @@ export function Navbar() {
       });
     }, { threshold: 0.5 });
   
-    // Adjust the selector to match your div elements with IDs
     document.querySelectorAll('div[id]').forEach((div) => {
       observer.observe(div);
     });
@@ -34,8 +34,6 @@ export function Navbar() {
       observer.disconnect();
     };
   }, []);
-  
-
 
   return (
     <Box pb={120}>

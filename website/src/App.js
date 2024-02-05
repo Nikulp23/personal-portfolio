@@ -4,10 +4,11 @@ import { Home } from './Home/Home';
 import { Navbar } from './Navbar/Navbar';
 import { FooterCentered } from './Footer/Footer';
 import { FeaturesCards } from './Experience/Cards';
-import "./App.css";
 import { AboutSkillsToggle } from './AboutMe/AboutMeToggle';
-import '@mantine/core/styles.css';
 import Projects from './Projects/Projects'; 
+import '@mantine/core/styles.css';
+import "./App.css";
+import { ContactMe } from './ContactMe/ContactMe';
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
 
       <div className='Projects' id='projects'>
         <Projects />
+      </div>
+
+      <div className='contact' id='contact'>
+        <ContactMe />
       </div>
 
       <FooterCentered />
