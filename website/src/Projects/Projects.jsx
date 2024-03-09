@@ -55,7 +55,7 @@ const cardData = [
     {
         id: 5,
         type: "GLIBBY",
-        title: "High Performance Computational Geometry Library",
+        title: "High-Performance Computational Geometry Library",
         content: " I developed algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using methods like the quadratic formula. This work significantly enhances the library's capabilities in computational geometry, enabling high-performance computations for a wide range of applications.",
         img: glibby,
         tags: ["C++", "CMAKE", "GITHUB"],
@@ -85,7 +85,7 @@ const Projects = () => {
             </Group>
 
             <Title order={1} className={classes.title} ta="center" mt="sm">
-                Lets take a look at my projects
+                Let's take a look at my projects
             </Title>
     
             <Text c='dimmed' className={classes.description} ta="center" mt="md">

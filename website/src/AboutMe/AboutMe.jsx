@@ -30,7 +30,7 @@ const AboutMe = () => {
 
             <p className={classes.description}>
                 <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
-                I am currently seeking summer internships or co-op opportunities where I can apply my skills in a dynamic and innovative environment. I am enthusiastic about contributing to a team that values creativity, efficiency, and a forward-thinking approach. I am eager to learn from seasoned professionals and to engage in projects that push the boundaries of what's possible in tech.                        </Text>
+                I am currently seeking summer internships or co-op opportunities where I can apply my skills in a dynamic and innovative environment. I am enthusiastic about contributing to a team that values creativity, efficiency, and a forward-thinking approach. I am eager to learn from seasoned professionals and engage in projects that push the boundaries of what's possible in tech.                        </Text>
             </p>
 
             <br></br>
