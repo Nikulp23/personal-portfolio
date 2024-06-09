@@ -3,7 +3,7 @@ import classes from './UserCardImage.module.css';
 import pic from './profile.png';
 
 const stats = [
-  { value: '3.65', label: 'GPA' },
+  { value: '3.70', label: 'GPA' },
   { value: 'May 2026', label: 'Graduation' },
 ];
 
