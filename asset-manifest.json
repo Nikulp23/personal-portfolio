@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.dbc7b5cb.css",
-    "main.js": "/static/js/main.2814abba.js",
+    "main.js": "/static/js/main.86d48741.js",
     "static/media/plane_wallpaper.png": "/static/media/plane_wallpaper.c18e06cadd29b507c03a.png",
     "static/media/wallpaper.png": "/static/media/wallpaper.e81b0ae324c7c11452c1.png",
     "static/media/chat_bing.png": "/static/media/chat_bing.be6ce4b7c7d602f489a0.png",
     "static/media/cartx.png": "/static/media/cartx.3a51e9a9e8145780f1c6.png",
     "static/media/profile.png": "/static/media/profile.73ca8b1ea8a27e440b2a.png",
     "static/media/hackrpi.png": "/static/media/hackrpi.37373350fdd34cb767b6.png",
-    "static/media/biomed_logo.png": "/static/media/biomed_logo.5c3b14588abdd519a60a.png",
     "static/media/glibby.png": "/static/media/glibby.dad20899d02c57630cc6.png",
     "static/media/datastructures.png": "/static/media/datastructures.7f5347945578b2d9d3e8.png",
+    "static/media/resume.pdf": "/static/media/resume.cf855e8b529809826448.pdf",
     "static/media/logo.png": "/static/media/logo.02407f714a3c99229930.png",
-    "static/media/resume.pdf": "/static/media/resume.350878b456217262d4c4.pdf",
     "static/media/math.png": "/static/media/math.6984327cf45eb9f53dee.png",
+    "static/media/coned.webp": "/static/media/coned.ff5eb5be8f231ee990e9.webp",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.dbc7b5cb.css.map": "/static/css/main.dbc7b5cb.css.map",
-    "main.2814abba.js.map": "/static/js/main.2814abba.js.map"
+    "main.86d48741.js.map": "/static/js/main.86d48741.js.map"
   },
   "entrypoints": [
     "static/css/main.dbc7b5cb.css",
-    "static/js/main.2814abba.js"
+    "static/js/main.86d48741.js"
   ]
 }
