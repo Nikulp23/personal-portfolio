@@ -12,8 +12,8 @@ import {
   import React from 'react';
 
   import rcos from './logos/rcos.png';
-  import biomed_logo from './logos/biomed_logo.png';
   import datastructures from './logos/datastructures.png';
+  import coned from './logos/coned.webp';
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -27,22 +27,22 @@ import {
 
   const mockdata = [
     {
-      title: 'Back End Technical Lead - CARTX',
-      date: 'AUG 2023 - Present',
-      description:[
-        '- Designed a backend system to make custom API calls, implemented web scraping routes using Python to retrieve data for over 1000 items in JSON format, and stored the information in a databases.',
-        '- Configured a remote-accessible MySQL server, established communication with the database, resulting in a 50% reduction in data processing time, and responsible for CRUD operations.'
+      title: 'Computer Operations Intern @ Con Edison',
+      date: 'MAY 2024 - Present',
+      description: [
+        '- Developing a robust Windows Executable application to automate outage report processing in the Outage Scheduling System (OSS), reducing manual labor by 80% and minimizing errors at the Energy Control Center (ECC).',
+        '- Enhancing operational efficiency by integrating automated conflict detection, streamlining the scheduling process, and significantly improving system reliability.'
       ],
-          image: rcos,
+      image: coned,
     },
     {
-      title: 'Web Developer Biomedical Engineering Department',
+      title: 'Co-founder and Project Lead @ RCOS',
       date: 'AUG 2023 - Present',
-      description: [
-        '- Initiated the development of a web-based academic system for Biomedical Students by web-scraping course information for over 46 majors from the college website and organizing it into SQL tables.',
-        '- Scheduled to design and implement RESTful APIs for efficient data retrieval and manipulation, ensuring seamless integration between the client-side interface, server-side servers and databases.',
+      description:[
+        '- Leading and guiding a group of students in developing CartX, a project aimed at optimizing shopping costs, providing technical leadership and support, and managing flow between server-side and client-side teams.',
+        '- Designed a backend system to make custom API calls, implemented web scraping routes from using Python to retrieve data from top retail chains in JSON format, and stored the information in the database, enabling data analysis.'
       ],
-      image: biomed_logo,
+          image: rcos,
     },
     {
       title: 'Undergraduate Data Structures Teaching Assistant',
