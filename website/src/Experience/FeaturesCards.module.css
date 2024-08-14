@@ -1,17 +1,13 @@
 .title {
     font-size: rem(34px);
-    font-weight: 900;
-  
-    /* @media (max-width: $mantine-breakpoint-sm) {
-      font-size: rem(24px);
-    } */
-  }
+    font-weight: 1900;
+}
   
   .description {
-    text-align: center; /* Centered description text */
-    max-width: rem(600px);
+    text-align: center;
+    max-width: rem(60px);
     margin: auto;
-    margin-bottom: 2rem; /* Space below the description */
+    margin-bottom: 0rem;
     &::after {
       content: '';
       display: block;
@@ -26,7 +22,7 @@
   
   .card {
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-    height: 450px;
+    height: 400px;
   }
   
   .cardTitle {
@@ -48,10 +44,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 125px; /* Adjust if needed */
+    height: 100px; /* Adjust if needed */
     width: 100%;
   }
   
+
   .cardImage {
     max-height: 90%;
     max-width: 90%;
@@ -66,17 +63,8 @@
     justify-content: space-between; /* Distribute space evenly */
   }
 
-.title {
-  margin-bottom: 1rem; /* Consistent space below the title */
-}
-
-.description {
-  margin-bottom: 2rem; /* Consistent space below the description */
-}
-
-.cardWrapper {
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 3rem; /* Space between cards */
-  
-}
+  .cardWrapper {
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 2rem; /* Space between cards */ 
+  }

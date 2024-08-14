@@ -2,7 +2,7 @@ import { Container, Text, Button } from '@mantine/core';
 import classes from './Home.module.css';
 import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
-import pdf from "./resume.pdf";
+import pdf from "../assets/resume.pdf";
 import React, { useState, useEffect } from 'react';
 
 // Define animation variants
