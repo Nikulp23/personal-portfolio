@@ -1,22 +1,58 @@
-.container_split {
+/* Combined CSS */
+.container {
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+  }
+  
+  .left-column {
+    flex: 0 0 30%; /* Adjust width as needed */
+    background-color: green;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0px;
-    background-color: whitesmoke;
-}
-
-.left {
-    flex: 55%;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.right {
-    flex: 45%;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-}
+  }
+  
+  .right-column {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  .top-left, .top-right {
+    background-color: pink;
+  }
+  
+  .bottom {
+    grid-column: 1 / span 2;
+    background-color: yellow;
+  }
+  
+  .card {
+    /* Styles for your card */
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+    }
+  
+    .right-column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
