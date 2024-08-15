@@ -21,9 +21,9 @@ function App() {
         <div className='right'></div>
       </div>
 
-      <div className='about' id='about'>
+      {/* <div className='about' id='about'>
         <AboutSkillsToggle />
-      </div>
+      </div> */}
 
       <div className='Experience' id='experience'>
         <FeaturesCards />

@@ -1,10 +1,6 @@
 .title {
     font-size: rem(34px);
     font-weight: 900;
-  
-    /* @media (max-width: $mantine-breakpoint-sm) {
-      font-size: rem(24px);
-    } */
   }
   
   .description {
@@ -26,7 +22,8 @@
   
   .card {
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-    height: 450px;
+    height: fit-content;
+    
   }
   
   .cardTitle {
@@ -48,7 +45,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 125px; /* Adjust if needed */
+    height: 8rem; /* Adjust if needed */
     width: 100%;
   }
   
@@ -60,10 +57,10 @@
   
   .card {
     border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
-    height: auto; /* Adjust to 'auto' or a fixed height as per content */
-    display: flex; /* Using flexbox */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: space-between; /* Distribute space evenly */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
 .title {
@@ -77,6 +74,6 @@
 .cardWrapper {
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  margin-bottom: 3rem; /* Space between cards */
-  
+  margin-bottom: 0rem; /* Space between cards */
+  width: 350px;
 }

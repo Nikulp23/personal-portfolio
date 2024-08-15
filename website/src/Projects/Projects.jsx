@@ -4,130 +4,156 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Projects.css";
 import cartx from "./cartx.png";
-import math from "./math.png";
+import math from "./math1.png";
 import hackrpi from "./hackrpi.png";
 import glibby from "./glibby.png";
 import chat_bing from "./chat_bing.png";
-import {Badge,Group,Title,Text,Container} from '@mantine/core';
-import classes from '../Experience/FeaturesCards.module.css';
+import finance from "./financeHacks.png";
+import { Badge, Group, Title, Text, Container } from "@mantine/core";
+import classes from "../Experience/FeaturesCards.module.css";
 
 const cardData = [
-    {
-        id: 1,
-        type: "MATH WHISPERERS",
-        title: "Voice-Enabled Math Solver: Integrating ChatGPT and Wolfram for Accessible Equation Processing",
-        content: "Revolutionizing math accessibility with just 3 keys, our project empowers the visually impaired to solve equations through voice, delivering intuitive auditory responses. Simplicity changes the world.",
-        img: math,
-        tags: ["WOLFRAM ALPHA", "VOICE RECOGNITION", "OPEN AI"],
-        link: "https://github.com/Nikulp23/math-whisperer",
-        alt: "picture"
-    },
-    {
-        id: 2,
-        type: "CARTX",
-        title: "Find cheapest products near you in one click!",
-        content: "CartX Vision is a dynamic React/JavaScript project aimed at revolutionizing the shopping experience by finding the most cost-effective products in local stores. With its innovative backend, CartX Vision makes API calls and web scrapes local store websites to compare item prices, ensuring users get the best deals available.",
-        img: cartx,
-        tags: ["REACT", "JAVASCRIPT", "WEBSCRAPING", "GITHUB WORKFLOW", "API"],
-        link: "https://github.com/Nikulp23/CartX",
-        alt: "cartx picture"
-    },
-    {
-        id: 3,
-        type: "OPEN AI AND BING API",
-        title: "Image to WebSearch Bridge using OPENAI and BING SEARCH ENGINE",
-        content: "This innovative tool uses the power of OpenAI's amazing image recognition technology to analyze visual content and extract pertinent details. Leveraging these insights, it seamlessly interfaces with the Bing Search Engine, translating visual data into comprehensive web searches.",
-        img: chat_bing,
-        tags: ["OPENAI", "BING API", "REACT", "JAVASCRIPT", "AZURE"],
-        link: "https://github.com/Nikulp23/Projects/tree/main/Instagram%20Clone",
-        alt: ""
-    },
-    {
-        id: 4,
-        type: "HACKRPI",
-        title: "Enhanced User Navigation: Dynamic Maps Page in React",
-        content: "Developed an interactive maps page using React and CSS for HackRPI's web application, enhancing user navigation and data interaction for over 600 participants in a hackathon setting.",
-        img: hackrpi,
-        tags: ["FRONTEND", "REACT", "CSS"],
-        link: "https://github.com/Nikulp23/HackRPI-Website2023",
-        alt: ""
-    },
-    {
-        id: 5,
-        type: "GLIBBY",
-        title: "High-Performance Computational Geometry Library",
-        content: " I developed algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using methods like the quadratic formula. This work significantly enhances the library's capabilities in computational geometry, enabling high-performance computations for a wide range of applications.",
-        img: glibby,
-        tags: ["C++", "CMAKE", "GITHUB"],
-        link: "https://github.com/Nikulp23/glibby",
-        alt: ""
-    }
+  {
+    id: 1,
+    type: "FINANCE FOR ALL",
+    title: "1st Place Hackathon Winner 🏆🏆🏆",
+    content:
+      "Developed a platform using React and Express JS that simplifies bank comparisons for accounts, credit cards, and loan rates, saving users significant research time. Integrated Google Gemini to create a responsive chatbot, enhancing user experience with financial literacy support.",
+    img: finance,
+    tags: ["GOOGLE GEMINI", "REACT", "EXPRESS JS", "CSS", "MYSQL"],
+    link: "https://github.com/Nikulp23/FinanceHacks",
+    alt: "picture",
+  },
+  {
+    id: 2,
+    type: "MATH WHISPERERS",
+    title: "Voice-Powered Math Solver with OpenAI and Wolfram Alpha ♿️",
+    content:
+      "Transforming math accessibility with voice commands, our project empowers visually impaired users to solve equations effortlessly. Advanced speech recognition and NLP deliver intuitive auditory responses, making education more inclusive.",
+    img: math,
+    tags: ["OPEN AI", "WOLFRAM ALPHA", "VOICE RECOGNITION", "CSS"],
+    link: "https://github.com/Nikulp23/math-whisperer",
+    alt: "picture",
+  },
+  {
+    id: 3,
+    type: "CARTX",
+    title: "Cost-Optimizing Shopping App 🛍️ 🛒",
+    content:
+      "CartX Vision revolutionizes shopping by finding the best local deals with a single click. Leveraging a dynamic React frontend and a powerful Node.js backend, it reduces shopping time by up to 30%. Integrated with RESTful APIs and advanced web scraping, CartX provides users with real-time price comparisons across major retailers.",
+    img: cartx,
+    tags: ["REACT", "EXPRESS JS", "PYTHON", "SELENIUM", "MONGO DB"],
+    link: "https://github.com/CartX-RCOS",
+    alt: "cartx picture",
+  },
+  {
+    id: 4,
+    type: "OpenAI - Microsoft Bing",
+    title: "Image to Web Recognition 🤖 🧠",
+    content:
+      "Created a cutting-edge feature that harnesses OpenAI’s Vision Model to analyze images and retrieve related web information via Microsoft Bing. This integration utilizes advanced AI trained on 400 million image-text pairs to deliver insightful and relevant search results.",
+    img: chat_bing,
+    tags: ["OPENAI VISION MODEL", "BING API", "AZURE", "JAVASCRIPT"],
+    link: "https://github.com/Nikulp23/Projects/blob/main/Instagram%20Clone/pages/tweet/imageAPI.js",
+    alt: "",
+  },
+  {
+    id: 4,
+    type: "HACKRPI",
+    title: "Enhanced User Navigation: Dynamic Maps Page in React📍",
+    content:
+      "Developed an interactive maps page using React and CSS for HackRPI's web application, significantly improving user navigation and data interaction for over 600 participants in a hackathon setting.",
+    img: hackrpi,
+    tags: ["REACT", "BOOTSTRAP", "JAVASCRIPT", "GITHUB", "FIGMA"],
+    link: "https://github.com/Nikulp23/HackRPI-Website2023",
+    alt: "",
+  },
+  {
+    id: 5,
+    type: "GLIBBY",
+    title: "High-Performance Computational Geometry Library 🧮",
+    content:
+      "Developed advanced algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using techniques like the quadratic formula. This enhancement significantly boosts the library's computational capabilities, supporting high-performance calculations for diverse applications.",
+    img: glibby,
+    tags: ["C++", "CMAKE", "VISUAL STUDIO", "GITHUB", "POWERSHELL"],
+    link: "https://github.com/Nikulp23/glibby",
+    alt: "",
+  },
 ];
 
 const Projects = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
+  return (
+    <Container size="lg" py="xl">
+      <Group justify="center">
+        <Badge variant="filled" size="xl">
+          MY PROJECTS
+        </Badge>
+      </Group>
 
-    return (
+      <Title order={1} className={classes.title} ta="center" mt="sm">
+        Let's take a look at my projects
+      </Title>
 
-        <Container size="lg" py="xl">
-            <Group justify="center">
-                
-            <Badge variant="filled" size="xl">
-                MY PROJECTS
-            </Badge>
-            </Group>
+      <Text c="dimmed" className={classes.description} ta="center" mt="md">
+        My career journey showcases a dedication to driving innovative technical
+        projects and a commitment to excellence and continuous improvement{" "}
+      </Text>
 
-            <Title order={1} className={classes.title} ta="center" mt="sm">
-                Let's take a look at my projects
-            </Title>
-    
-            <Text c='dimmed' className={classes.description} ta="center" mt="md">
-            From teaching complex concepts to leading innovative technical projects, my career path is a testament to a commitment to excellence and growth.
-            </Text>
+      <div className="container">
+        <Slider {...settings}>
+          {cardData.map((card) => (
+            <div key={card.id}>
+              <article className="card">
+                <div className="background">
+                  <img src={card.img} alt={card.alt} />
+                </div>
+                <div className="content">
+                  <div className="card-header">
+                    <div className="card-type name">{card.type}</div>
 
-            <div className="container">
-                <Slider {...settings}>
-                    {cardData.map((card) => (
-                        <div key={card.id}>
-                            <article className="card">
-                                <div className='background'>
-                                    <img src={card.img} alt={card.alt} />
-                                </div>
-                                <div className='content'>
-                                    <div className="card-header">
-                                        <div className="card-type name">{card.type}</div>
-
-                                        <a href={card.link} target="_blank" rel="noopener noreferrer">
-                                            <div className="latest-article">View</div>
-                                        </a>
-
-                                    </div>
-                                    <div className="card-content">
-                                        <h2 className="card-title">{card.title}</h2>
-                                        <p>{card.content}</p>
-                                    </div>
-                                    <div className="blog-preview__bottom">
-                                    {card.tags.map((tag, index) => (
-                                    <div key={index} className="card-type" style={{transitionDelay: `${index * 100}ms`, opacity: 1, transform: 'translateY(0)'}}>
-                                        {tag}
-                                    </div>
-                                    ))}
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                    <a
+                      href={card.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="latest-article">View</div>
+                    </a>
+                  </div>
+                  <div className="card-content">
+                    <h2 className="card-title">{card.title}</h2>
+                    <p>{card.content}</p>
+                  </div>
+                  <div className="blog-preview__bottom">
+                    {card.tags.map((tag, index) => (
+                      <div
+                        key={index}
+                        className="card-type"
+                        style={{
+                          transitionDelay: `${index * 100}ms`,
+                          opacity: 1,
+                          transform: "translateY(0)",
+                        }}
+                      >
+                        {tag}
+                      </div>
                     ))}
-                </Slider>
+                  </div>
+                </div>
+              </article>
             </div>
-        </Container>
-    );
+          ))}
+        </Slider>
+      </div>
+    </Container>
+  );
 };
 
 export default Projects;

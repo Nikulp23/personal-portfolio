@@ -1,10 +1,10 @@
 :root {
   --background: white;
-  --primary: #605DFF;
+  --primary: #238be6;
   --primary-light: #E6E5FF;
   --secondary: #DFE6EE;
   --secondary-background: #F4F6F9;
-  --secondary-text: #2E5A8C;
+  --secondary-text: #238be6;
 }
 
 * {
@@ -23,8 +23,9 @@
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   width: 100%;
+  height: fit-content;
   container-name: card-container;
   container-type: inline-size;
   margin-left: auto;
@@ -234,9 +235,9 @@
 
 .name {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
-  background-color: black;
+  background-color: #238be6;
 }
 
 .blog-preview__bottom {
@@ -254,8 +255,17 @@
   font-size: 14px;
   margin: 5px 0;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .card-type:hover {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps aspect ratio and covers the container */
+  object-position: left; /* Align image to the left */
+  border-radius: 8px; /* To add rounded corners to images */
 }

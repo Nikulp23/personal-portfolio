@@ -60,6 +60,12 @@ export function Navbar() {
             <a href="#projects" 
              className={`${classes.link} ${activeLink === 'projects' ? classes.activeLink : ''}`}
              onClick={() => handleSetActiveLink('projects')}><h3>Projects</h3></a>
+            
+            <a href="#contact" 
+             className={`${classes.link} ${activeLink === 'contact' ? classes.activeLink : ''}`}
+             onClick={() => handleSetActiveLink('contact')}><h3>Let's Connect</h3></a>
+
+
 
           </Group>
 
