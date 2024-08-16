@@ -5,23 +5,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #e2f4fe;
+    background-image: url('../plane_wallpaper.png'); /* Update with the correct path to the image */
+    margin-bottom: 10px;
   }
-  
   .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--mantine-spacing-md) var(--mantine-spacing-md);
-  
-    @media (max-width: $mantine-breakpoint-sm) {
-      flex-direction: column;
-    }
-  }
-  
-  .links {
-    @media (max-width: $mantine-breakpoint-sm) {
-      margin-top: var(--mantine-spacing-lg);
-      margin-bottom: var(--mantine-spacing-sm);
-    }
   }
