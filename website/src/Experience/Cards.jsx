@@ -27,8 +27,8 @@ import {
 
   const mockdata = [
     {
-      title: 'Computer Operations Intern',
-      date: 'MAY - AUG 2024',
+      title: 'Software Engineering Intern',
+      date: 'MAY - PRESENT',
       description: [
         '• Developed an application for the Outage Scheduling System using Angular to automate outage report analysis, achieving an 90% reduction in time and minimizing error rates for senior system operators.',
         '• Improved transformer analysis for 50+ substations by developing custom API routes in C# to retrieve historical peak loads and transformer ratings, performing contingency-based calculations, and evaluating overall system load.',
