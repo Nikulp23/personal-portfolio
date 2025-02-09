@@ -9,6 +9,7 @@ import hackrpi from "./hackrpi.png";
 import glibby from "./glibby.png";
 import chat_bing from "./chat_bing.png";
 import finance from "./financeHacks.png";
+import ecovision from "./ecovision.png";
 import { Badge, Group, Title, Text, Container } from "@mantine/core";
 import classes from "../Experience/FeaturesCards.module.css";
 
@@ -26,14 +27,14 @@ const cardData = [
   },
   {
     id: 2,
-    type: "MATH WHISPERERS",
-    title: "Voice-Powered Math Solver with OpenAI and Wolfram Alpha ♿️",
+    type: "ECO VISION",
+    title: "Hack RPI Best AI Hack 🏆🏆🏆",
     content:
-      "Transforming math accessibility with voice commands, our project empowers visually impaired users to solve equations effortlessly. Advanced speech recognition and NLP deliver intuitive auditory responses, making education more inclusive.",
-    img: math,
-    tags: ["OPEN AI", "WOLFRAM ALPHA", "VOICE RECOGNITION", "CSS"],
-    link: "https://github.com/Nikulp23/math-whisperer",
-    alt: "picture",
+      "Created a web app using React and Flask to identify recyclables with 95% accuracy, leveraging AI and OpenCV for image/video analysis. Enhanced waste sorting efficiency by 20% and provided actionable sustainability insights.",
+    img: ecovision,
+    tags: ["OPEN AI", "REACT", "FLASK", "Python", "OpenCV"],
+    link: "https://devpost.com/software/recircle-ot57su",
+    alt: "ecovision",
   },
   {
     id: 3,
@@ -48,6 +49,18 @@ const cardData = [
   },
   {
     id: 4,
+    type: "MATH WHISPERERS",
+    title: "Voice-Powered Math Solver with OpenAI and Wolfram Alpha ♿️",
+    content:
+      "Transforming math accessibility with voice commands, our project empowers visually impaired users to solve equations effortlessly. Advanced speech recognition and NLP deliver intuitive auditory responses, making education more inclusive.",
+    img: math,
+    tags: ["OPEN AI", "WOLFRAM ALPHA", "VOICE RECOGNITION", "CSS"],
+    link: "https://github.com/Nikulp23/math-whisperer",
+    alt: "picture",
+  },
+  
+  {
+    id: 5,
     type: "OpenAI - Microsoft Bing",
     title: "Image to Web Recognition 🤖 🧠",
     content:
@@ -58,7 +71,7 @@ const cardData = [
     alt: "",
   },
   {
-    id: 4,
+    id: 6,
     type: "HACKRPI",
     title: "Enhanced User Navigation: Dynamic Maps Page in React📍",
     content:
@@ -69,7 +82,7 @@ const cardData = [
     alt: "",
   },
   {
-    id: 5,
+    id: 7,
     type: "GLIBBY",
     title: "High-Performance Computational Geometry Library 🧮",
     content:
