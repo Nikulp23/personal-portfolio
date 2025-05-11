@@ -1,271 +1,138 @@
-:root {
-  --background: white;
-  --primary: #238be6;
-  --primary-light: #E6E5FF;
-  --secondary: #DFE6EE;
-  --secondary-background: #F4F6F9;
-  --secondary-text: #238be6;
-}
-
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Style for the previous button */
-.slick-prev:before {
-  color: black;
+/* container takes full viewport height, 3 cols, auto-wrap */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1rem;
+  padding: 0rem;
+  align-items: start;
 }
 
-/* Style for the next button */
-.slick-next:before {
-  color: black;
-}
-
-.container {
-  max-width: 1000px;
-  width: 100%;
-  height: fit-content;
-  container-name: card-container;
-  container-type: inline-size;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  display: flex;
-  border: 1px solid var(--primary-light);
-  border-radius: 12px;
-  background-color: var(--secondary-background);
-  cursor: pointer;
+/* each card fixed height so grid is neat */
+.project-card {
+  position: relative;
+  border-radius: 30px;
   overflow: hidden;
-  min-height: 450px; /* Increased from 360px */
-  max-width: 1200px; /* New property to control maximum width */
-  flex-direction: column;
-  margin: 20px; /* Increased margin */
-  padding: 20px; /* New padding for internal spacing */
-}
-
-.card:hover {
-  box-shadow: 0 24px 72px 0 rgba(96, 93, 255, .1);
-}
-
-.content {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  height: 275px;           /* fixed for uniformity */
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  justify-content: flex-start;
-  padding: 16px;
 }
 
-.background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project-image {
+  width: 100%;               /* fills container width */
+  max-width: 100%;           /* prevents overflow */
+  height: auto;              /* adjusts height based on image ratio */
+  object-fit: contain;       /* ensures the image is fully visible */
+  object-position: center;   /* centers the image */
+  display: block;
 }
 
-.card-type {
-  height: 36px;
-  padding: 4px 12px;
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* dark overlay at bottom */
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* always-visible part */
+.project-title {
   display: flex;
-  white-space: nowrap;
   align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  gap: 8px;
-  color: var(--secondary-text);
-  background-color: var(--secondary);
-}
-
-.card-header {
-  display: flex;
   justify-content: space-between;
+  font-size: 1rem;
+  margin: 1rem 1rem 0 1rem;
+  /* top right bottom left */
 }
 
-.latest-article {
-  height: 36px;
-  padding: 4px 12px;
-  border-radius: 8px;
-  display: flex;
-  white-space: nowrap;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-light);
-  color: var(--primary);
+.project-tech {
+  font-size: 0.75rem;
+  color: #cfe2ff;
+  margin: 0 0 0 1rem;
 }
 
-.card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.card-content>h2 {
-  font-weight: 700;
-}
-
-.card-content>p {
-  font-weight: 400;
-  margin: 6px 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+/* hidden details */
+.project-details {
+  opacity: 0;
+  max-height: 0;
   overflow: hidden;
+  transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
+  background-color: transparent;
+  font-size: 1rem;
 }
 
-.blog-author {
-  display: flex;
-  align-items: center;
-  width: auto;
-  padding: 4px 20px 4px 4px;
-  column-gap: 8px;
-  border: 1px solid #e6e5ff;
-  background-color: #fff;
-  border-radius: 32px;
-  height: 56px;
-}
-
-
-.blog-author__name {
-  font-weight: 700;
-}
-
-.blog-author__alias {
-  color: var(--primary);
-  font-weight: 500;
-}
-
-.blog-author img {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.blog-preview__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4px;
-}
-
-.blog-preview__bottom {
-  margin-top: auto;
-}
-
-.go-to-article-button {
-  padding: 8px;
-  min-height: 36px;
-  min-width: 56px;
-  width: 100%;
-  max-width: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background-color: var(--primary-light);
-  transition: all 0.2s ease-in-out;
-  border: 1px solid transparent;
-}
-
-.go-to-article-button svg {
-  width: 64px;
-  stroke: var(--secondary-text);
-}
-
-.go-to-article-button:hover {
-  border: 1px solid var(--primary);
-}
-
-@container card-container (min-width:600px) {
-  .card {
-      flex-direction: row;
-      padding: 32px;
-      gap: 32px;
-  }
-
-  .background {
-      flex: 3;
-      overflow: hidden;
-  }
-
-  .content {
-      flex: 4;
-      padding: 0px;
-  }
-
-  .background img {
-      border-radius: 8px;
-  }
-
-  .card-content p {
-      -webkit-line-clamp: 6;
-  }
-}
-
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Projects.css */
-.card-title {
-  font-size: 24px; /* Adjust as needed */
+/* revealed content styling */
+.project-award {
+  color: gold;
   font-weight: bold;
-  color: #333; /* Adjust as needed */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  transition: color 0.3s ease;
+  margin: 0 0 0.2rem 1rem;
 }
 
-.card-type {
-  color: #000000; /* Adjust for readability */
-  padding: 5px 10px;
+.project-description {
+  font-size: 0.6rem;
+  line-height: 1.4;
+  margin: 0 0 1rem 1rem;
+}
+
+/* reveal on hover */
+.project-card:hover .project-details {
+  opacity: 1;
+  max-height: 225px;       /* enough to show description + button */
+}
+
+.project-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
   border-radius: 12px;
-  font-size: 14px;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
-
-.card-type:hover {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.name {
+  text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  color: white;
-  background-color: #238be6;
+  transition: background 0.3s, color 0.3s;
 }
 
-.blog-preview__bottom {
-  display: flex;
-  flex-wrap: wrap; /* Allow tags to wrap to the next line */
-  justify-content: space-between;
-  align-items: center;
-  gap: 4px;
-  margin-top: auto;
+.project-button:hover {
+  background: #0d6efd;
+  color: #fff;
 }
 
-.card-type {
-  padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 14px;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-  font-weight: bold;
+/* responsiveness */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
 
-.card-type:hover {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+/* style your external SVG */
+.project-link-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  margin-left: 0.5rem;
 }
 
-.background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Keeps aspect ratio and covers the container */
-  object-position: left; /* Align image to the left */
-  border-radius: 8px; /* To add rounded corners to images */
+.project-link:hover .project-link-icon {
+  opacity: 1;
 }

@@ -10,10 +10,10 @@
 }
 
 .avatar {
-  border: 2px solid var(--mantine-color-body);
-  width: 120px; /* You might want to increase this */
-  height: 120px;
-  margin-top: -60px; /* Adjust this value to move the avatar up or down */
+  border: 1px solid var(--mantine-color-body);
+  width: 140px; /* You might want to increase this */
+  height: 140px;
+  margin-top: -50px; /* Adjust this value to move the avatar up or down */
 }
 
 @media (max-width: 767px) {
@@ -26,8 +26,6 @@
   .avatar {
     width: 100px; /* Adjust avatar size for smaller screens */
     height: 100px;
-    margin-top: -50px; /* Adjust the negative margin to move the avatar up */
+    margin-top: -40px; /* Adjust the negative margin to move the avatar up */
   }
-
-  /* Add any additional styling adjustments for smaller screens here */
 }

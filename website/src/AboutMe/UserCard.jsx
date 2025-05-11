@@ -3,8 +3,8 @@ import classes from './UserCardImage.module.css';
 import pic from './profile.png';
 
 const stats = [
-  { value: '3.75', label: 'GPA' },
-  { value: 'May 2026', label: 'Graduation' },
+  { value: '3.76', label: 'GPA' },
+  { value: 'Dec 2025', label: 'Graduation' },
 ];
 
 export function UserCardImage() {
@@ -23,16 +23,16 @@ export function UserCardImage() {
 
     <Card withBorder padding="xl" radius="md" className={classes.card}>
       <Card.Section
-        h={140}
+        h={100}
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)',
+            'url(https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg)',
         }}
       />
       <Avatar
         src={pic}
-        size={130}
-        radius={80}
+        size={220}
+        radius={120}
         mx="auto"
         mt={-50}
         className={classes.avatar}
@@ -61,3 +61,5 @@ export function UserCardImage() {
     </Card>
   );
 }
+
+export default UserCardImage;

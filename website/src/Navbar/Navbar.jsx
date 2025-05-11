@@ -41,7 +41,7 @@ export function Navbar() {
         <Group justify="space-between" h="100%">
           
         <a href="#home" onClick={() => handleSetActiveLink('home')} style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={logo} alt="Logo" style={{ height: '40px', width: '45px', marginLeft: '10px', marginTop: '5px' }} />
+            <img src={logo} alt="Logo" style={{ height: '40px', width: '40px', marginLeft: '15px', marginTop: '2.5px' }} />
         </a>
 
           <Group h="100%" gap={0} visibleFrom="sm">
@@ -51,7 +51,7 @@ export function Navbar() {
 
             <a href="#about"
              className={`${classes.link} ${activeLink === 'about' ? classes.activeLink : ''}`}
-             onClick={() => handleSetActiveLink('about')}><h3>About Me</h3></a>
+             onClick={() => handleSetActiveLink('about')}><h3>My Journey</h3></a>
 
             <a href="#experience" 
              className={`${classes.link} ${activeLink === 'experience' ? classes.activeLink : ''}`}

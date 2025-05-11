@@ -37,9 +37,9 @@ export function Home() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center', // Center vertically
-        alignItems: 'center', // Center horizontally
-        height: '100vh', // Make the container full height of the viewport
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh'
       }}
     >
       <Container size={700} className={classes.inner}>

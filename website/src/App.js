@@ -9,6 +9,7 @@ import Projects from './Projects/Projects';
 import '@mantine/core/styles.css';
 import "./App.css";
 import { ContactMe } from './ContactMe/ContactMe';
+import Card from './Home/Card';
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
 
       <div className="Home" id='home'>
         <Navbar />
+        {/* <div><Home /></div> */}
         <div className='left'><Home /></div>
-        <div className='right'></div>
+        <div className='right'><Card /></div>
       </div>
 
       <div className='about' id='about'>

@@ -1,172 +1,145 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./Projects.css";
-import cartx from "./cartx.png";
-import math from "./math1.png";
-import hackrpi from "./hackrpi.png";
-import glibby from "./glibby.png";
-import chat_bing from "./chat_bing.png";
-import finance from "./financeHacks.png";
-import ecovision from "./ecovision.png";
-import { Badge, Group, Title, Text, Container } from "@mantine/core";
+import cartx from "./images/cartx.png";
+import finance from "./images/financeHacks.png";
+import ecovision from "./images/ecovision.png";
+import { Badge, Title, Text, Container } from "@mantine/core";
 import classes from "../Experience/FeaturesCards.module.css";
+import linkIcon from "./github.svg";
+
+import proj4 from "./images/proj4.png";
+import proj5 from "./images/proj5.png";
+import proj6 from "./images/proj6.png";
 
 const cardData = [
   {
     id: 1,
-    type: "FINANCE FOR ALL",
-    title: "1st Place Hackathon Winner 🏆🏆🏆",
+    type: "FINANCE FOR ALL 🏆🏆🏆",
+    title: "1st Place Hackathon Winner",
     content:
       "Developed a platform using React and Express JS that simplifies bank comparisons for accounts, credit cards, and loan rates, saving users significant research time. Integrated Google Gemini to create a responsive chatbot, enhancing user experience with financial literacy support.",
     img: finance,
-    tags: ["GOOGLE GEMINI", "REACT", "EXPRESS JS", "CSS", "MYSQL"],
+    tags: ["GEMINI-PRO API", "REACT", "EXPRESS JS"],
     link: "https://github.com/Nikulp23/FinanceHacks",
     alt: "picture",
   },
   {
     id: 2,
-    type: "ECO VISION",
-    title: "Hack RPI Best AI Hack 🏆🏆🏆",
+    type: "ECO VISION 🏆🏆🏆",
+    title: "Hack RPI Best AI Hack",
     content:
       "Created a web app using React and Flask to identify recyclables with 95% accuracy, leveraging AI and OpenCV for image/video analysis. Enhanced waste sorting efficiency by 20% and provided actionable sustainability insights.",
     img: ecovision,
-    tags: ["OPEN AI", "REACT", "FLASK", "Python", "OpenCV"],
+    tags: ["OPENAI API", "REACT", "FLASK", "Python", "OpenCV"],
     link: "https://devpost.com/software/recircle-ot57su",
     alt: "ecovision",
   },
   {
     id: 3,
-    type: "CARTX",
-    title: "Cost-Optimizing Shopping App 🛍️ 🛒",
+    type: "CARTX 🛍️ 🛒",
+    title: "Cost-Optimizing Shopping App",
     content:
       "CartX Vision revolutionizes shopping by finding the best local deals with a single click. Leveraging a dynamic React frontend and a powerful Node.js backend, it reduces shopping time by up to 30%. Integrated with RESTful APIs and advanced web scraping, CartX provides users with real-time price comparisons across major retailers.",
     img: cartx,
-    tags: ["REACT", "EXPRESS JS", "PYTHON", "SELENIUM", "MONGO DB"],
-    link: "https://github.com/CartX-RCOS",
+    tags: [ "MONGO DB", "REACT", "SELENIUM", "PYTHON"],
+    link: "https://github.com/orgs/CartX-RCOS/repositories",
     alt: "cartx picture",
   },
   {
     id: 4,
-    type: "MATH WHISPERERS",
-    title: "Voice-Powered Math Solver with OpenAI and Wolfram Alpha ♿️",
+    type: "MATH WHISPERERS ♿️",
+    title: "Voice-Powered Math Solver",
     content:
       "Transforming math accessibility with voice commands, our project empowers visually impaired users to solve equations effortlessly. Advanced speech recognition and NLP deliver intuitive auditory responses, making education more inclusive.",
-    img: math,
-    tags: ["OPEN AI", "WOLFRAM ALPHA", "VOICE RECOGNITION", "CSS"],
+    img: proj4,
+    tags: [ "OPENAI API", "WOLFRAM API" , "VOICE RECOGNITION"],
     link: "https://github.com/Nikulp23/math-whisperer",
-    alt: "picture",
+    alt: "cartx",
   },
-  
+
   {
     id: 5,
-    type: "OpenAI - Microsoft Bing",
-    title: "Image to Web Recognition 🤖 🧠",
+    type: "STRATUS ☁️📍",
+    title: "Weather based Navigation App",
     content:
-      "Created a cutting-edge feature that harnesses OpenAI’s Vision Model to analyze images and retrieve related web information via Microsoft Bing. This integration utilizes advanced AI trained on 400 million image-text pairs to deliver insightful and relevant search results.",
-    img: chat_bing,
-    tags: ["OPENAI VISION MODEL", "BING API", "AZURE", "JAVASCRIPT"],
-    link: "https://github.com/Nikulp23/Projects/blob/main/Instagram%20Clone/pages/tweet/imageAPI.js",
-    alt: "",
+      "Developed an mobile navigation app that leverages real-time weather data to recommend the best routes and departure times.",
+    img: proj5,
+    tags: ["REACT NATIVE", "EXPO GO", "GOOGLE APIs"],
+    link: "https://github.com/CSCI-4440/App",
+    alt: "STRATUS",
   },
   {
     id: 6,
-    type: "HACKRPI",
-    title: "Enhanced User Navigation: Dynamic Maps Page in React📍",
+    type: "OpenAI - Microsoft Bing 🤖 🧠",
+    title: "Image to Web Recognition",
     content:
-      "Developed an interactive maps page using React and CSS for HackRPI's web application, significantly improving user navigation and data interaction for over 600 participants in a hackathon setting.",
-    img: hackrpi,
-    tags: ["REACT", "BOOTSTRAP", "JAVASCRIPT", "GITHUB", "FIGMA"],
-    link: "https://github.com/Nikulp23/HackRPI-Website2023",
-    alt: "",
-  },
-  {
-    id: 7,
-    type: "GLIBBY",
-    title: "High-Performance Computational Geometry Library 🧮",
-    content:
-      "Developed advanced algorithms for polynomial operations, including addition, subtraction, multiplication, division, and root finding using techniques like the quadratic formula. This enhancement significantly boosts the library's computational capabilities, supporting high-performance calculations for diverse applications.",
-    img: glibby,
-    tags: ["C++", "CMAKE", "VISUAL STUDIO", "GITHUB", "POWERSHELL"],
-    link: "https://github.com/Nikulp23/glibby",
-    alt: "",
-  },
+      "Created a cutting-edge feature that harnesses OpenAI’s Vision Model to analyze images and retrieve related web information via Microsoft Bing. This integration utilizes advanced AI trained on 400 million image-text pairs to deliver insightful and relevant search results.",
+    img: proj6,
+    tags: ["OPENAI API", "AZURE VISION API", "AZURE"],
+    link: "https://github.com/Nikulp23/Projects/blob/main/Instagram%20Clone/pages/tweet/imageAPI.js",
+    alt: "OpenAI",
+  }
 ];
 
 const Projects = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+    return (
+      <Container size="lg" py="xl">
+        {/* header */}
+        <div className={classes.header} style={{ textAlign: "center", marginBottom: "2rem" }}>
+          <Badge variant="filled" size="xl">
+            MY PROJECTS
+          </Badge>
+  
+          <Title order={3} className={classes.title} align="center" mt="sm">
+            Let's take a look at my projects
+          </Title>
+  
+          <Text c="dimmed" className={classes.description} align="center" mt="md">
+            My career journey showcases a dedication to driving innovative technical
+            projects and a commitment to excellence and continuous.
+          </Text>
+        </div>
+  
+        {/* grid of cards */}
+        <div className="projects-container">
+          {cardData.slice(0, 6).map((card) => (
+            <div className="project-card" key={card.id}>
+              <img src={card.img} alt={card.type} className="project-image" />
+  
+              <div className="project-overlay">
+  
+                {/* hidden until hover */}
+                <div className="project-details">
 
-  return (
-    <Container size="lg" py="xl">
-      <Group justify="center">
-        <Badge variant="filled" size="xl">
-          MY PROJECTS
-        </Badge>
-      </Group>
-
-      <Title order={1} className={classes.title} ta="center" mt="sm">
-        Let's take a look at my projects
-      </Title>
-
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        My career journey showcases a dedication to driving innovative technical
-        projects and a commitment to excellence and continuous improvement{" "}
-      </Text>
-
-      <div className="container">
-        <Slider {...settings}>
-          {cardData.map((card) => (
-            <div key={card.id}>
-              <article className="card">
-                <div className="background">
-                  <img src={card.img} alt={card.alt} />
-                </div>
-                <div className="content">
-                  <div className="card-header">
-                    <div className="card-type name">{card.type}</div>
-
+                <h2 className="project-title">{card.type}
+                    
                     <a
-                      href={card.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    aria-label={`Open ${card.type} repository`}
                     >
-                      <div className="latest-article">View</div>
+                      <img
+                        src={linkIcon}
+                        alt=""
+                        className="project-link-icon"
+                      />
                     </a>
-                  </div>
-                  <div className="card-content">
-                    <h2 className="card-title">{card.title}</h2>
-                    <p>{card.content}</p>
-                  </div>
-                  <div className="blog-preview__bottom">
-                    {card.tags.map((tag, index) => (
-                      <div
-                        key={index}
-                        className="card-type"
-                        style={{
-                          transitionDelay: `${index * 100}ms`,
-                          opacity: 1,
-                          transform: "translateY(0)",
-                        }}
-                      >
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
+  
+                  </h2>
+  
+                  <p className="project-tech">{card.tags.join(" • ")}</p>
+                  <p className="project-award">{card.title}</p>
+                  <p className="project-description">{card.content}</p>
+                  
                 </div>
-              </article>
+              </div>
             </div>
           ))}
-        </Slider>
-      </div>
-    </Container>
-  );
+        </div>
+      </Container>
+    );
 };
-
+  
 export default Projects;

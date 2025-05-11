@@ -9,6 +9,10 @@
   }
 }
 
+.avatar {
+  margin-top: -100px;
+}
+
 .inner {
   position: relative;
   z-index: 1;

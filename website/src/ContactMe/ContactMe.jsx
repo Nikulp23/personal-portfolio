@@ -21,10 +21,11 @@ export function ContactMe() {
   return (
     <Card shadow="sm" padding="lg" radius="md" className='contactForm'>
       <form 
-        action="https://formspree.io/f/mbjngkdj" // Your actual Formspree endpoint
+        action="https://formspree.io/f/mbjngkdj"
         method="POST"
       >
-        <h1 className={classes.title} style={{ textAlign: 'center' }}>
+
+        <h1 className={classes.title} style={{ textAlign: 'center', fontSize: '1.4rem' }}>
           <Text component="span" variant="gradient" gradient={{ from: 'black', to: 'black' }} inherit>
             LET'S CONNECT! <span className={classes.mobileTitleBreak}></span>
           </Text>
@@ -61,7 +62,7 @@ export function ContactMe() {
           label="Message"
           placeholder="Your message"
           maxRows={10}
-          minRows={5}
+          minRows={4}
           autosize
           name="message"
           variant="filled"
@@ -70,7 +71,7 @@ export function ContactMe() {
 
         <Group justify="center" mt="xl">
           <Button 
-            size="md"
+            size="s"
             variant="gradient"
             gradient={{ from: 'blue', to: 'cyan' }}
             className={`${classes.control} ${classes.animatedButton} ${classes.buttonGroup}`}
