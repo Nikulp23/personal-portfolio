@@ -7,10 +7,10 @@ import {
     SimpleGrid,
     Container,
   } from '@mantine/core';
+  
   import classes from './FeaturesCards.module.css';
   import { motion } from 'framer-motion';
   import React from 'react';
-
   import rcos from './logos/rcos.png';
   import datastructures from './logos/datastructures.png';
   import coned from './logos/coned.png';
@@ -92,7 +92,8 @@ import {
         whileHover="hover"
         className={classes.cardWrapper}
       >
-
+        
+      {/* eslint-disable-next-line */}
       <Card shadow="md" radius="md" className="${classes.card} test" padding="xl">
       
         {standardizeImage(feature.image, feature.title)}

@@ -81,6 +81,9 @@
   transition: box-shadow 0.3s ease;
   margin-bottom: 0rem;
   width: 275px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cardTitle {

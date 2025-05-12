@@ -1,4 +1,4 @@
-import { Container, Text, Button, Avatar } from "@mantine/core";
+import { Avatar } from "@mantine/core";
 import classes from "./Home.module.css";
 import React from "react";
 import profilePic from "./new.png";

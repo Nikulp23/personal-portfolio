@@ -1,6 +1,5 @@
 import React from 'react';
 import { MantineProvider, Badge, Title , Text } from '@mantine/core';
-import UserCardImage from './UserCard';
 import SimpleTimeline from './Timeline';
 
 // Replace these imports with your actual logo image paths:

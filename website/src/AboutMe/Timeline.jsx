@@ -14,8 +14,8 @@ const lineStyle = {
   top: 0,
   bottom: 0,
   left: '50%',
-  width: '1px',
-  background: 'grey',
+  width: '4px',
+  background: 'white',
   transform: 'translateX(-50%)',
   zIndex: 1,
 };

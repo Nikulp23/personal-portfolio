@@ -1,25 +1,9 @@
-import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
+import { Group, ActionIcon, rem } from '@mantine/core';
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import classes from './FooterCentered.module.css';
 import pdf from "./resume.pdf";
 
-const links = [
-  { link: pdf, label: 'View Resume' },
-  // { link: '#', label: 'Contact Me' },
-];
-
 export function FooterCentered() {
-  const items = links.map((link) => (
-    <Anchor
-      c="dimmed"
-      key={link.label}
-      href={link.link}
-      lh={1}
-      size="sm"
-    >
-      {link.label}
-    </Anchor>
-  ));
 
   return (
     
