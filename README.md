@@ -99,5 +99,4 @@ React, OpenAI, Wolfram Alpha API
 
 📧 **Email**: 23nikulp@gmail.com  
 🔗 **LinkedIn**: [linkedin.com/in/nikulpatel23](https://linkedin.com/in/nikulpatel23)  
-💻 **GitHub**: [github.com/Nikulp23](https://github.com/Nikulp23)  
-📱 **Phone**: +1 (845) 793-1854
+💻 **GitHub**: [github.com/Nikulp23](https://github.com/Nikulp23) 
