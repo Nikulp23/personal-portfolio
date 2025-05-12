@@ -2,7 +2,6 @@ import { Container, Text, Button } from '@mantine/core';
 import classes from './Home.module.css';
 import { motion } from 'framer-motion';
 import ReactTyped from 'react-typed';
-import pdf from "./resume.pdf";
 import React, { useState, useEffect } from 'react';
 
 // Define animation variants
@@ -72,7 +71,7 @@ export function Home() {
         <div className={classes.buttonContainerHome}>
           <Button
             component="a"
-            href={pdf}
+            href="/resume.html"
             target="_blank" // Opens the link in a new tab
             size="l"
             variant="gradient"

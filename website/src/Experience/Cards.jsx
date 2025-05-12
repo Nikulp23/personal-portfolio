@@ -32,20 +32,20 @@ import {
       date: 'MAY 2025 - PRESENT',
       technologies: [ "AWS CLOUD "],
       description: [
-        '• Set to contribute to the deployment and automation of scalable AWS infrastructure using services such as EC2, S3, RDS, and Lambda.',
-        '• Will collaborate with DevOps and SRE teams to monitor systems, troubleshoot issues, and optimize cloud operations.',
-        '• Aiming to contribute to infrastructure-as-code initiatives and cloud optimization efforts using tools like AWS CloudFormation and Terraform.'
+        '• Preparing to support deployment and automation of scalable AWS infrastructure using services such as EC2, S3, RDS, and Lambda.',
+        '• Will collaborate with DevOps and SRE teams to monitor systems, resolve issues, and improve cloud performance.',
+        '• Expected to contribute to infrastructure-as-code efforts and cloud optimization using AWS CloudFormation and Terraform.'
       ],
       image: nyl,
     },
     {
       title: 'Software Engineering Intern',
       date: 'MAY 2024 - APRIL 2025',
-      technologies: [ "C#" , "SQL", "ANGULAR"],
+      technologies: [ "C#" , "SQL", "ANGULAR JS"],
       description: [
-        '• Developed a .NET console application in C# to automate outage report workflows, streamlining manual reporting for system operators, and reducted processing time by 90%.',
-        '• Created a .NET service in C# with SQL queries to analyze 40K+ outage records and extract critical information.',
-        '• Designed C# APIs for transformer analysis across 50+ substations, enabling load evaluations.',
+        '• Designed an ASP.NET service in C# to query a database of 40,000+ outage records, extracting critical insights and detecting conflicts to optimize outage scheduling workflows.',
+        '• Implemented custom API controllers in C# to optimize transformer analysis for 50+ substations.',
+        '• Developed an Outage Scheduling System application with AngularJS and .NET Web APIs.',
       ],
       image: coned,
     },

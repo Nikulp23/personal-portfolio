@@ -1,7 +1,6 @@
 import { Group, ActionIcon, rem } from '@mantine/core';
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import classes from './FooterCentered.module.css';
-import pdf from "./resume.pdf";
 
 export function FooterCentered() {
 
@@ -12,7 +11,7 @@ export function FooterCentered() {
   {/* Centered content */}
   <div style={{ flex: '1', textAlign: 'center' }}>
     <a 
-      href={pdf}
+      href="./resume.html"
       target="_blank" 
       rel="noopener noreferrer" 
       style={{ 

@@ -33,6 +33,7 @@ export function AboutSkillsToggle() {
     {
       side: 'left',
       logo: NyLifeLogo,
+      highlight: true,
       date: 'MAY 2025 - PRESENT',
       description: 'Technology Engineer Intern @ New York Life',
     },

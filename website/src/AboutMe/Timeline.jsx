@@ -1,18 +1,17 @@
 // Timeline.js
 import React, { useState } from 'react';
 
-// Inline styles
 const containerStyle = {
   position: 'relative',
   margin: '30px auto',
-  padding: '0',           // no bottom padding
+  padding: '0',
   maxWidth: '900px',
 };
 
 const lineStyle = {
   position: 'absolute',
   top: 0,
-  bottom: '35px',         // stops line 35px above container bottom
+  bottom: '35px',
   left: '50%',
   width: '4px',
   background: 'white',
@@ -61,11 +60,15 @@ export function SimpleTimeline({ items }) {
 
       {items.map((item, idx) => {
         const isLeft = item.side === 'left';
-        const isHovered = hoveredIndex === idx;
+        const isHovered =
+          hoveredIndex === idx || (hoveredIndex === null && item.highlight);
 
         return (
           <div
             key={idx}
+            // <-- Moved hover handlers here
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
             style={{
               display: 'flex',
               justifyContent: isLeft ? 'flex-start' : 'flex-end',
@@ -75,6 +78,7 @@ export function SimpleTimeline({ items }) {
               position: 'relative',
             }}
           >
+            {/* content box */}
             <div
               style={{
                 width: 'calc(50% - 70px)',
@@ -82,7 +86,7 @@ export function SimpleTimeline({ items }) {
                 background: '#fff',
                 borderRadius: '12px',
                 boxShadow: isHovered
-                  ? '0 4px 16px rgba(0, 0, 0, 0.15)'
+                  ? '0 4px 16px var(--mantine-color-blue-filled)'
                   : '0 2px 8px rgba(0, 0, 0, 0.1)',
                 padding: '12px',
                 fontSize: '0.9rem',
@@ -91,8 +95,6 @@ export function SimpleTimeline({ items }) {
                 transform: isHovered ? 'scale(1.03)' : 'scale(1)',
                 transition: 'transform 0.2s ease, box-shadow 0.2s ease',
               }}
-              onMouseEnter={() => setHoveredIndex(idx)}
-              onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
                 style={{
@@ -107,8 +109,17 @@ export function SimpleTimeline({ items }) {
               <div style={{ fontWeight: 600 }}>{item.description}</div>
             </div>
 
+            {/* logo or dot */}
             {item.logo ? (
-              <div style={logoWrapperStyle}>
+              <div
+                style={{
+                  ...logoWrapperStyle,
+                  // add a little glow on hover too
+                  boxShadow: isHovered
+                    ? '0 0 20px var(--mantine-color-blue-filled)'
+                    : 'none',
+                }}
+              >
                 <img src={item.logo} alt="" style={logoStyle} />
               </div>
             ) : (
