@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb07a949.css",
-    "main.js": "/static/js/main.313715f2.js",
+    "main.css": "/static/css/main.4b4872e6.css",
+    "main.js": "/static/js/main.94036684.js",
     "static/media/plane_wallpaper.png": "/static/media/plane_wallpaper.c18e06cadd29b507c03a.png",
-    "static/media/wallpaper.png": "/static/media/wallpaper.e81b0ae324c7c11452c1.png",
-    "static/media/math1.png": "/static/media/math1.64706d6d3226135aeef0.png",
+    "static/media/proj5.png": "/static/media/proj5.84c2bcbdff7d2f50852c.png",
+    "static/media/proj4.png": "/static/media/proj4.bbf19fc2c10ab31b4cd9.png",
+    "static/media/proj6.png": "/static/media/proj6.2a61a99594e55a8bcd20.png",
+    "static/media/grad.png": "/static/media/grad.aad3b8ad429b0900ab69.png",
     "static/media/financeHacks.png": "/static/media/financeHacks.5ee15f17f10f9b1b5112.png",
-    "static/media/chat_bing.png": "/static/media/chat_bing.be6ce4b7c7d602f489a0.png",
+    "static/media/ecovision.png": "/static/media/ecovision.b91a98ad92918058dc25.png",
     "static/media/cartx.png": "/static/media/cartx.3a51e9a9e8145780f1c6.png",
-    "static/media/profile.png": "/static/media/profile.73ca8b1ea8a27e440b2a.png",
-    "static/media/hackrpi.png": "/static/media/hackrpi.37373350fdd34cb767b6.png",
-    "static/media/glibby.png": "/static/media/glibby.dad20899d02c57630cc6.png",
+    "static/media/new.png": "/static/media/new.ec1ce29665e1b76f5ec4.png",
     "static/media/resume.pdf": "/static/media/resume.5c51e28477a2f2b41065.pdf",
     "static/media/datastructures.png": "/static/media/datastructures.7f5347945578b2d9d3e8.png",
-    "static/media/logo.png": "/static/media/logo.02407f714a3c99229930.png",
-    "static/media/coned.webp": "/static/media/coned.ff5eb5be8f231ee990e9.webp",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/rpi.png": "/static/media/rpi.7f5347945578b2d9d3e8.png",
+    "static/media/logo.png": "/static/media/logo.7d7266cec44d58945cc8.png",
+    "static/media/coned.png": "/static/media/coned.7122bd5ac04c056fde6d.png",
+    "static/media/nyl.avif": "/static/media/nyl.c907b9e9fa24ba35525c.avif",
+    "static/media/icon.webp": "/static/media/icon.465f708a16f71435fa80.webp",
+    "static/media/github.svg": "/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
-    "main.eb07a949.css.map": "/static/css/main.eb07a949.css.map",
-    "main.313715f2.js.map": "/static/js/main.313715f2.js.map"
+    "main.4b4872e6.css.map": "/static/css/main.4b4872e6.css.map",
+    "main.94036684.js.map": "/static/js/main.94036684.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb07a949.css",
-    "static/js/main.313715f2.js"
+    "static/css/main.4b4872e6.css",
+    "static/js/main.94036684.js"
   ]
 }
