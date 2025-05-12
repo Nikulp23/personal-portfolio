@@ -6,7 +6,7 @@ import SimpleTimeline from './Timeline';
 import RpiLogo from './rpi.png';
 import ConEdLogo from './icon.webp';
 import NyLifeLogo from './nyl.avif';
-import GradLogo from './class-new.png';
+import GradLogo from './grad.png';
 
 import styles from './About.module.css';
 
@@ -19,7 +19,8 @@ export function AboutSkillsToggle() {
       date: 'AUG 2022',
       description: (
         <>
-          Bachelor of Science in Computer Science & ITWS<br></br>
+          Started B.S in Computer Science & ITWS<br></br>
+          Rensselaer Polytechnic Institute
         </>
       ),
     },
@@ -27,21 +28,21 @@ export function AboutSkillsToggle() {
       side: 'right',
       logo: ConEdLogo,
       date: 'MAY 2024 - APR 2025',
-      description: 'Software Engineering Intern at Con Edison',
+      description: 'Software Engineering Intern @ Con Edison',
     },
     {
       side: 'left',
       logo: NyLifeLogo,
       date: 'MAY 2025 - PRESENT',
-      description: 'Technology Engineer Intern at New York Life',
+      description: 'Technology Engineer Intern @ New York Life',
     },
     {
       side: 'right',
-      date: '🎓 DEC 2025',
+      date: 'DEC 2025',
       logo: GradLogo,
       description: (
         <>
-          B.S. in Computer Science & ITWS<br />
+          Completed B.S. in Computer Science & ITWS<br />
           Current GPA: 3.76 / 4.0
         </>
       ),
@@ -50,7 +51,12 @@ export function AboutSkillsToggle() {
       side: 'left',
       logo: RpiLogo,
       date: 'JAN 2026 - DEC 2026',
-      description: 'Masters in Computer Science at RPI',
+      description: (
+        <>
+          M.S in Computer Science & ITWS<br></br>
+          Rensselaer Polytechnic Institute
+        </>
+      )
     }
   ];
 

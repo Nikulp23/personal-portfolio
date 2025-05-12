@@ -4,15 +4,15 @@ import React, { useState } from 'react';
 // Inline styles
 const containerStyle = {
   position: 'relative',
-  margin: '30px auto',          // center on page
-  padding: '0',
-  maxWidth: '900px',             // control how wide the timeline can grow
+  margin: '30px auto',
+  padding: '0',           // no bottom padding
+  maxWidth: '900px',
 };
 
 const lineStyle = {
   position: 'absolute',
   top: 0,
-  bottom: 0,
+  bottom: '35px',         // stops line 35px above container bottom
   left: '50%',
   width: '4px',
   background: 'white',
@@ -49,7 +49,7 @@ const logoStyle = {
   width: '100%',
   height: '100%',
   objectFit: 'contain',
-  borderRadius: '10%',  // or '50%' if you want perfectly round logos
+  borderRadius: '10%',
 };
 
 export function SimpleTimeline({ items }) {
@@ -70,22 +70,21 @@ export function SimpleTimeline({ items }) {
               display: 'flex',
               justifyContent: isLeft ? 'flex-start' : 'flex-end',
               width: '100%',
-              padding: '0 0px',      // 20px gutter on both sides
-              marginBottom: '50px',
+              padding: '0',
+              marginBottom: idx === items.length - 1 ? '0' : '50px',
               position: 'relative',
             }}
           >
-            {/* The white “card” */}
             <div
               style={{
-                width: 'calc(50% - 70px)',     // fill half the space minus the 20px gutters
+                width: 'calc(50% - 70px)',
                 textAlign: isLeft ? 'right' : 'left',
                 background: '#fff',
                 borderRadius: '12px',
                 boxShadow: isHovered
                   ? '0 4px 16px rgba(0, 0, 0, 0.15)'
                   : '0 2px 8px rgba(0, 0, 0, 0.1)',
-                padding: '12px 12px',
+                padding: '12px',
                 fontSize: '0.9rem',
                 lineHeight: 1.4,
                 color: '#333',
