@@ -9,10 +9,10 @@ const Card = () => {
             src={profilePic}
             alt="Nikul Patel"
             size={400}
-            radius={200}
+            radius={300}
             styles={{
             root: {
-                border: '3px solid #1e1e1e',
+                // border: '3px solid #1e1e1e',
                 transform: 'rotate(-1deg)'
             },
             }}

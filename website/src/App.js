@@ -18,7 +18,6 @@ function App() {
 
       <div className="Home" id='home'>
         <Navbar />
-        {/* <div><Home /></div> */}
         <div className='left'><Home /></div>
         <div className='right'><Card /></div>
       </div>
