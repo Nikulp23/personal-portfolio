@@ -21,6 +21,26 @@
     box-sizing: border-box;
 }
 
+/* Default (mobile-first) styles */
+.left, .right {
+  margin-top: 60px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Default: hide on small screens */
+.hide-on-mobile {
+  display: none;
+}
+
+/* Show on screens >= 768px */
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: block;
+  }
+}
+
   /* Media query for larger screens */
 @media (min-width: 768px) {
     .Home {

@@ -19,7 +19,7 @@ function App() {
       <div className="Home" id='home'>
         <Navbar />
         <div className='left'><Home /></div>
-        <div className='right'><Card /></div>
+        <div className='right hide-on-mobile'><Card /></div>
       </div>
 
       <div className='about' id='about'>
