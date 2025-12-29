@@ -33,9 +33,8 @@ export function AboutSkillsToggle() {
     {
       side: 'left',
       logo: NyLifeLogo,
-      highlight: true,
-      date: 'MAY 2025 - PRESENT',
-      description: 'Technology Engineer Intern @ New York Life',
+      date: 'MAY 2025 - DEC 2025',
+      description: 'Software Engineering Intern @ New York Life',
     },
     {
       side: 'right',
@@ -43,14 +42,15 @@ export function AboutSkillsToggle() {
       logo: GradLogo,
       description: (
         <>
-          Completed B.S. in Computer Science & ITWS<br />
-          Current GPA: 3.76 / 4.0
+          Graduated B.S. in Computer Science & ITWS<br />
+          GPA: 3.77 / 4.0
         </>
       ),
     },
     {
       side: 'left',
       logo: RpiLogo,
+      highlight: true,
       date: 'JAN 2026 - DEC 2026',
       description: (
         <>

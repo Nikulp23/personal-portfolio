@@ -2,6 +2,7 @@
   position: relative;
   padding-top: rem(120px);
   padding-bottom: rem(80px);
+  overflow: hidden;
 
   @media (max-width: 768px) {
     padding-top: rem(80px);
@@ -10,7 +11,7 @@
 }
 
 .avatar {
-  margin-top: -100px;
+  margin-top: -150px;
 }
 
 .inner {
@@ -47,6 +48,18 @@
   @media (max-width: 768px) {
     font-size: rem(28px);
     text-align: left;
+  }
+}
+
+.tagline {
+  text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (max-width: 768px) {
+    text-align: left;
+    font-size: var(--mantine-font-size-sm);
   }
 }
 
@@ -97,6 +110,22 @@ h1 {
 @keyframes typewriter {
   from { width: 0; }
   to { width: 100%; }
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--mantine-color-dimmed);
+  font-size: 24px;
+  z-index: 10;
+  
+  @media (max-width: 768px) {
+    bottom: 20px;
+    font-size: 20px;
+  }
 }
 
 @keyframes blinkCaret {

@@ -1,8 +1,9 @@
 import { Container, Text, Button } from '@mantine/core';
 import classes from './Home.module.css';
 import { motion } from 'framer-motion';
-import ReactTyped from 'react-typed';
+import { ReactTyped } from 'react-typed';
 import React, { useState, useEffect } from 'react';
+import { RESUME_URL } from '../config/constants';
 
 // Define animation variants
 const containerVariants = {
@@ -53,25 +54,18 @@ export function Home() {
         </h1>
 
         <h1 className={`${classes.title} typewriter`}>
-          {isMobile ? (
-            <span>Full Stack Developer</span>
-          ) : (
-            <ReactTyped
-              strings={["Full Stack Developer", "Computer Science Student"]}
-              typeSpeed={70}
-              backSpeed={70}
-              backDelay={1}
-              loop
-              smartBackspace
-            />
-          )}
+          <span>Software Engineer</span>
         </h1>
+
+        <Text className={classes.tagline} size="lg" c="dimmed" mt="md">
+          Passionate about building scalable software that solves real problems
+        </Text>
 
         {/* Buttons on the home page */}
         <div className={classes.buttonContainerHome}>
           <Button
             component="a"
-            href="/resume.html"
+            href={RESUME_URL}
             target="_blank" // Opens the link in a new tab
             size="l"
             variant="gradient"

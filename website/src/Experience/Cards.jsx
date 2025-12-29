@@ -28,13 +28,13 @@ import {
 
   const mockdata = [
     {
-      title: 'Technology Engineer Intern',
-      date: 'MAY 2025 - PRESENT',
-      technologies: [ "AWS CLOUD "],
+      title: 'Software Engineering Intern',
+      date: 'MAY 2025 - DEC 2025',
+      technologies: [ "JAVA", "KOGITO", "POSTMAN" ],
       description: [
-        '• Preparing to support deployment and automation of scalable AWS infrastructure using services such as EC2, S3, RDS, and Lambda.',
-        '• Will collaborate with DevOps and SRE teams to monitor systems, resolve issues, and improve cloud performance.',
-        '• Expected to contribute to infrastructure-as-code efforts and cloud optimization using AWS CloudFormation and Terraform.'
+        '• Led backend development of 80+ insurance business rules using Kogito Java DSL, validating logic with JUnit tests to automate approvals across 1M+ transactions.',
+        '• Developed automated testing suites in Postman incorporating unit and integration testing to reduce deployment time by 20%.',
+        '• Collaborated with teams using Agile methodologies, contributing to code reviews, sprint planning, and feature delivery.'
       ],
       image: nyl,
     },

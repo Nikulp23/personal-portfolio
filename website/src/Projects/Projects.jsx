@@ -3,9 +3,10 @@ import "./Projects.css";
 import cartx from "./images/cartx.png";
 import finance from "./images/financeHacks.png";
 import ecovision from "./images/ecovision.png";
-import { Badge, Title, Text, Container } from "@mantine/core";
+import { Badge, Title, Text, Container, Group, ActionIcon } from "@mantine/core";
 import classes from "../Experience/FeaturesCards.module.css";
 import linkIcon from "./github.svg";
+import { IconBrandGithub } from '@tabler/icons-react';
 
 import proj4 from "./images/proj4.png";
 import proj5 from "./images/proj5.png";
@@ -86,9 +87,22 @@ const Projects = () => {
       <Container size="lg" py="xl">
         {/* header */}
         <div className={classes.header} style={{ textAlign: "center", marginBottom: "2rem" }}>
-          <Badge variant="filled" size="xl">
-            MY PROJECTS
-          </Badge>
+          <Group justify="center" gap="sm">
+            <Badge variant="filled" size="xl">
+              MY PROJECTS
+            </Badge>
+            <ActionIcon
+              component="a"
+              href="https://github.com/Nikulp23"
+              target="_blank"
+              size="xl"
+              variant="filled"
+              color="dark"
+              radius="md"
+            >
+              <IconBrandGithub size={20} stroke={2.5} />
+            </ActionIcon>
+          </Group>
   
           <Title order={3} className={classes.title} align="center" mt="sm">
             Let's take a look at my projects
