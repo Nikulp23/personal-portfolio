@@ -26,7 +26,7 @@ export function FooterCentered() {
     >
       View Resume
     </a>
-    <div>© 2025 Nikul Patel</div>
+    <div>© 2026 Nikul Patel</div>
   </div>
 
   {/* Right-aligned content */}
